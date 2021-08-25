@@ -4,7 +4,7 @@
 
 <br>
 
-An introductory hands-on course on big data analytics and visualization with [Python](https://www.python.org/).
+An introductory, technical, and hands-on course on big data analytics and visualization using modern software tools.
 
 ## Prerequisites
 
@@ -56,16 +56,16 @@ There is no textbook.
 
 ## Reference books
 
-The most relevant reference book:
+The most relevant reference book
 
 - *An Introduction to Statistical Learning: with Applications in R*, 2nd edition, James, Witten, Hastie, & Tibshirani, Springer, 2021, PDF freely available at <https://www.statlearning.com>
 
-Other *technical* reference books (in no particular order):
+Other *technical* reference books
 
 - [*Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and The Cloud*](https://www.pearson.com/us/higher-education/program/Deitel-Intro-to-Python-for-Computer-Science-and-Data-Science-Learning-to-Program-with-AI-Big-Data-and-The-Cloud/PGM2392788.html), Deitel & Deitel, Pearson, 2019
 
 
-Other *non-technical* reference books (in no particular order):
+Other *non-technical* reference books (in no particular order)
 
 - [*Data Science*](https://mitpress.mit.edu/books/data-science), Kelleher and Tierney, MIT Press, 2018
 - [*Calling Bullshit: The Art of Skepticism in a Data-Driven World*](https://www.penguinrandomhouse.com/books/563882/calling-bullshit-by-carl-t-bergstrom-and-jevin-d-west/), Bergstrom and West, Random House, 2020
@@ -102,16 +102,29 @@ An un-submitted work counts as zero.
 
 **Format requirements**
 
+See the top part of each homework Jupyter notebook for the format requirements.
+
 ## Reading assignments
 
-There will be occasional reading assignments.
-For each reading, you will submit a brief summary with your comments.
+There will be roughly bi-weekly reading assignments (for a total of six assignments).
+For each reading, you will submit a brief summary with your own comments.
+The readings are listed below in case you want to get a head start.
 
-Some publicly-available readings are listed below in case you want to get a head start.
-
+Required readings
 - [*Abraham Wald and the Missing Bullet Holes*](https://medium.com/@penguinpress/an-excerpt-from-how-not-to-be-wrong-by-jordan-ellenberg-664e708cfc3d) by Jordan Ellenberg
-- [*The era of blind faith in big data must end*](https://www.youtube.com/watch?v=_2u_eHHzRto) by Cathy O'Neil
+- *Real Use Cases of 'Big Data' in the Social Sciences* (recording on Canvas) by Jeff Lockhart
+- [*The Era of Blind Faith in Big Data Must End*](https://www.youtube.com/watch?v=_2u_eHHzRto) by Cathy O'Neil
 - [*How to Think about Data Visualization*](https://www.youtube.com/watch?v=vTingdk_pVM) by Jake VanderPlas
+
+
+Elective readings (Pick any two talks from the list below. It is recommended to watch them all if you have time.)
+- [*Data-Driven Modeling to Understand (and Predict?) the Impacts of Climate Variability and Change*](https://www.youtube.com/watch?v=PEdBUtyiPyo) by Seth Guikema
+- [*Shaping a City with Open Data*](https://www.youtube.com/watch?v=pPhXEeMlFTY) by Ben Wellington
+- [*A programming language to heal the planet together: Julia*](https://www.youtube.com/watch?v=qGW0GT1rCvs) by Alan Edelman
+- [*Big Data is (at least) Four Different Problems*](https://www.youtube.com/watch?v=KRcecxdGxvQ) by Michael Stonebraker
+- [*The Grammar of Graphics and the Future of Big Data Visualization*](https://www.youtube.com/watch?v=1X93Sum_SyM) by Leland Wilkinson
+- [*Mathematics of Big Data and Machine Learning*](https://www.youtube.com/watch?v=0sKPkJME2Jw) by Jeremy Kepner
+- Any talks from the [MIDAS Fall 2021 Seminar Series](https://midas.umich.edu/seminar-series/)
 
 ## Project
 
