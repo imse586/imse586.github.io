@@ -117,13 +117,14 @@ Required readings
 - [*How to Think about Data Visualization*](https://www.youtube.com/watch?v=vTingdk_pVM) by Jake VanderPlas
 
 
-Elective readings (Pick any two talks from the list below. It is recommended to watch them all if you have time.)
+Elective readings (Listed in no particular order. Pick any two from the list. It is recommended to read/watch them all if you have the time.)
 - [*Data-Driven Modeling to Understand (and Predict?) the Impacts of Climate Variability and Change*](https://www.youtube.com/watch?v=PEdBUtyiPyo) by Seth Guikema
 - [*Shaping a City with Open Data*](https://www.youtube.com/watch?v=pPhXEeMlFTY) by Ben Wellington
-- [*A programming language to heal the planet together: Julia*](https://www.youtube.com/watch?v=qGW0GT1rCvs) by Alan Edelman
+- [*A Programming Language to Heal the Planet Together: Julia*](https://www.youtube.com/watch?v=qGW0GT1rCvs) by Alan Edelman
 - [*Big Data is (at least) Four Different Problems*](https://www.youtube.com/watch?v=KRcecxdGxvQ) by Michael Stonebraker
 - [*The Grammar of Graphics and the Future of Big Data Visualization*](https://www.youtube.com/watch?v=1X93Sum_SyM) by Leland Wilkinson
 - [*Mathematics of Big Data and Machine Learning*](https://www.youtube.com/watch?v=0sKPkJME2Jw) by Jeremy Kepner
+- [*How to Avoid Machine Learning Pitfalls: a Guide for Academic Researchers*](https://arxiv.org/pdf/2108.02497.pdf) by Michael A. Lones
 - Any talks from the [MIDAS Fall 2021 Seminar Series](https://midas.umich.edu/seminar-series/)
 
 ## Project
