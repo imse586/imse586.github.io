@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMSE 586 Lecture 4</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {font-family: 'Roboto'; font-weight: bold; line-height: 1.4;}
+      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:26px;}
+      .remark-slide-content h1 {font-size: 40px; text-align: center;}
+      .remark-slide-content p, .remark-slide-content li {font-size:30px; margin: 20px 0;}
+      a:link {text-decoration: none;}
+      img{max-height: 100%;}
+      .quote_author {display: block; text-align: right;}
+      .source {font-size: 24px;}
+      .red {color:red;}
+      .green {color:green;}
+      .gray {color:gray}
+    </style>
+  </head>
+  <body>
+
+<textarea id="source">
+
+class: center, middle
+
+## IMSE 586 
+## Big Data Analytics and Visualization
+<br/>
+### Instructor: Fred Feng
+### Lecture 4
+
+
+
+---
+class: middle, center
+# Linear regression
+
+
+<br>
+For more details, see
+
+[An Introduction to Statistical Learning](https://www.statlearning.com/), Chapter 3.1
+
+
+---
+
+```
+import pandas as pd
+df = pd.read_csv('./data/advertising.csv')
+```
+
+.center[![:scale 50%](images/advertising.png)]
+
+
+---
+# Questions we may ask
+
+- Is there a relationship between advertising budget (TV, radio, and newspaper) and the sales?
+--
+
+- If yes, how strong is the relationship?
+--
+
+- Is the relationship linear?
+--
+
+- How accurately can we estimate the effect of each medium on sales?
+--
+
+- Given the budget, how accurately can we predict future sales?
+--
+
+- Is there synergy among the media?
+
+---
+
+```
+import matplotlib.pyplot as plt
+plt.scatter(x='TV', y='sales', data=df)
+```
+
+.center[![:scale 100%](images/tv_sales.png)]
+
+
+---
+
+# Linear regression
+
+Study the relationship between two or more variables.
+
+$$\text{sales} = \beta_0 + \beta_1 \cdot \text{TV}$$
+
+--
+
+.red[Dependent variable] (\\(y\\)):
+
+The output variable, also called .red[target] or .red[response].
+
+--
+
+.green[Independent variables] (\\(x\\)): 
+
+The input variables, also called .green[predictors], .green[features], or .green[regressors].
+
+--
+
+$$\text{sales} = \beta_0 + \beta_1 \cdot \text{TV} + \beta_2 \cdot \text{radio} + \beta_3 \cdot \text{newspaper}$$
+
+
+<!-- ------------------------------------------ -->
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
+<script>
+remark.macros.scale = function (percentage) {
+  var url = this;
+  return '<img src="' + url + '" style="width: ' + percentage + '" />';
+};
+
+var slideshow = remark.create({
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'magula', 
+  highlightSpans: true,
+  highlightLines: true,
+});
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+
+      MathJax.Hub.Configured();
+</script>
+</body>
+</html>
