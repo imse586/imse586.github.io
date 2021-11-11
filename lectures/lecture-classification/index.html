@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Remark.js demo</title>
+    <title>IMSE 586 Lecture 8</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
@@ -27,74 +27,145 @@
 
 class: center, middle
 
-## Remark.js demo
+## IMSE 586 
+## Big Data Analytics and Visualization
 <br/>
-### Prepared by: Fred Feng
-
-
----
-# Increment bullet point lists
-
---
-
-Your probability of winning a game is 
-
-- 0.3 against .green[half of] the players (let’s call them type I)
---
-
-- 0.5 against .green[a quarter of] the players (type II)
---
-
-- 0.6 against the .green[remaining] players (type III)
-
---
-
-You play a game against a randomly chosen opponent. 
-
---
-
-What is the probability of you winning the game?
-
+### Instructor: Fred Feng
+### Lecture 8
 
 ---
-# Beautiful math formula in $\LaTeX$
+# Classification
+
+If the target has .red[two] classes --> .green[logistic regression]
+- Does the patient have diabetes?
+- Is the email spam?
+
+--
+
+What if the target has .red[more than two] classes?
+- .green[Which blood type] does a person have, given the results of various diagnostic tests?
+- .green[Which candidate] will a person vote for, given their demographic, social, and economic characteristics?
+- Optical character recognition (OCR)
+
+<!-- --
+
+we can use other methods, e.g., .green[*k*-nearest neighbors]. -->
+
+---
+# Nearest neighbor
+
+.center[![:scale 100%](images/knn_demo.png)]
+
+---
+# *k*-nearest neighbors (*k*-NN)
+
+.center[![:scale 100%](images/knn_demo_k1.png)]
+
+---
+# *k*-nearest neighbors (*k*-NN)
+
+.center[![:scale 100%](images/knn_demo_k3.png)]
+
+---
+# *k*-nearest neighbors (*k*-NN)
+
+.center[![:scale 100%](images/knn_demo_k5.png)]
+
+---
+# *k*-nearest neighbors (*k*-NN)
+
+Where is the model exactly?
+
+.center[![:scale 60%](images/knn_demo.png)]
+
+--
+
+It is a [non-parametric model](https://en.wikipedia.org/wiki/Nonparametric_statistics). 
+
+---
+# *k*-nearest neighbors (*k*-NN)
+
+About *k*
+
+- *k* should be an odd number
+
+- *k* should not be a multiple of the number of classes
+
+--
 
 <br>
 
-Let $Y=g(X)$ be a function of a .green[discrete] RV $X$.
+*k* is a model parameter that we pre-specified before training the model. 
 
-$$\text{E}[Y]=\text{E}[g(X)]=\sum_x g(x) \cdot p_X(x)$$
+Such a parameter is referred as a [hyperparameter](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning%29) in machine learning. 
 
---
 
-In complete analogy, if $X$ is continuous, 
+ 
 
-$$\text{E}[Y]=\text{E}[g(X)]=\int_{-\infty}^{+\infty} g(x) \cdot f_X(x) dx$$
+
+
 
 ---
-# Adding pictures
+# Measuring the distance (similarity)
 
-.center[
-![:scale 45%](images/cdf_expo.png)
-&nbsp;
-![:scale 45%](images/cdf_expo_1minus.png)
-]
+With two features $X$ and $Y$
 
-$$F_X(x) = 
-\begin{cases}
-    0, & \text{if } x \leq 0 \\\
-    1-e^{-\lambda x},              & \text{if } x > 0
-\end{cases}
+<br>
+.center[![:scale 80%](images/dist_euclidean.png)]
+
+
+$$\text{Euclidean distance}=\sqrt{(X_2-X_1)^2 + (Y_2-Y_1)^2}$$
+
+---
+# Manhattan distance
+
+.center[![:scale 58%](images/manhattan.png)]
+
+---
+# Manhattan distance
+
+
+With two features $X$ and $Y$
+
+<br>
+.center[![:scale 80%](images/dist_manhattan.png)]
+
+$$\text{Manhattan distance}=|X_2-X_1| + |Y_2-Y_1|$$
+
+---
+# Minkowski distance
+
+<br>
+More generally, 
+
+$$\text{Minkowski dist.}=[(|X_2-X_1|)^p + (|Y_2-Y_1|)^p]^{\frac{1}{p}}$$
+
+<br>
+
+$p=1 \rightarrow \text{Manhattan distance}$
+
+$p=2 \rightarrow \text{Euclidean distance}$
+
+---
+# Beyond 2-dimension
+
+All the distance definitions can be naturally expended to .red[more than two] dimensions. 
+
+
+<br>
+For example, with .green[three] features $X$, $Y$, and $Z$
+
+$$
+\begin{aligned}
+&\text{Euclidean distance}= \\\
+\\\
+&\sqrt{(X_2-X_1)^2 + (Y_2-Y_1)^2+ (Z_2-Z_1)^2}
+\end{aligned}
 $$
 
-$$\text{P}(X > x) = 1-F_X(x)=1-(1-e^{-\lambda x})=e^{-\lambda x}$$
 
 
----
-# Easy to embed YouTube videos
 
-
-<iframe width="750" height="500" src="https://www.youtube.com/embed/cXqDIFUB7YU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
