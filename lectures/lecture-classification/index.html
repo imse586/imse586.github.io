@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remark.js demo</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {font-family: 'Roboto'; font-weight: bold; line-height: 1.4;}
+      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:26px;}
+      .remark-slide-content h1 {font-size: 40px; text-align: center;}
+      .remark-slide-content p, .remark-slide-content li {font-size:30px; margin: 20px 0;}
+      a:link {text-decoration: none;}
+      img{max-height: 100%;}
+      .quote_author {display: block; text-align: right;}
+      .source {font-size: 24px;}
+      .red {color:red;}
+      .green {color:green;}
+      .gray {color:gray}
+    </style>
+  </head>
+  <body>
+
+<textarea id="source">
+
+class: center, middle
+
+## Remark.js demo
+<br/>
+### Prepared by: Fred Feng
+
+
+---
+# Increment bullet point lists
+
+--
+
+Your probability of winning a game is 
+
+- 0.3 against .green[half of] the players (let’s call them type I)
+--
+
+- 0.5 against .green[a quarter of] the players (type II)
+--
+
+- 0.6 against the .green[remaining] players (type III)
+
+--
+
+You play a game against a randomly chosen opponent. 
+
+--
+
+What is the probability of you winning the game?
+
+
+---
+# Beautiful math formula in $\LaTeX$
+
+<br>
+
+Let $Y=g(X)$ be a function of a .green[discrete] RV $X$.
+
+$$\text{E}[Y]=\text{E}[g(X)]=\sum_x g(x) \cdot p_X(x)$$
+
+--
+
+In complete analogy, if $X$ is continuous, 
+
+$$\text{E}[Y]=\text{E}[g(X)]=\int_{-\infty}^{+\infty} g(x) \cdot f_X(x) dx$$
+
+---
+# Adding pictures
+
+.center[
+![:scale 45%](images/cdf_expo.png)
+&nbsp;
+![:scale 45%](images/cdf_expo_1minus.png)
+]
+
+$$F_X(x) = 
+\begin{cases}
+    0, & \text{if } x \leq 0 \\\
+    1-e^{-\lambda x},              & \text{if } x > 0
+\end{cases}
+$$
+
+$$\text{P}(X > x) = 1-F_X(x)=1-(1-e^{-\lambda x})=e^{-\lambda x}$$
+
+
+---
+# Easy to embed YouTube videos
+
+
+<iframe width="750" height="500" src="https://www.youtube.com/embed/cXqDIFUB7YU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+<!-- ------------------------------------------ -->
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script>
+remark.macros.scale = function (percentage) {
+  var url = this;
+  return '<img src="' + url + '" style="width: ' + percentage + '" />';
+};
+
+var slideshow = remark.create({
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'github', 
+  highlightSpans: true,
+  highlightLines: true,
+});
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          inlineMath: [['$','$'], ['\\(','\\)']]
+          }
+      });
+
+      MathJax.Hub.Configured();
+</script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMSE 586 Lecture 9</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {font-family: 'Roboto'; font-weight: bold; line-height: 1.4;}
+      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:26px;}
+      .remark-slide-content h1 {font-size: 40px; text-align: center;}
+      .remark-slide-content p, .remark-slide-content li {font-size:30px; margin: 20px 0;}
+      a:link {text-decoration: none;}
+      img{max-height: 100%;}
+      .quote_author {display: block; text-align: right;}
+      .source {font-size: 24px;}
+      .red {color:red;}
+      .green {color:green;}
+      .blue {color:blue;}
+      .gray {color:gray}
+      td, th {border: 1px solid black; font-size: 30px;}
+      table{border-collapse: collapse;}
+      .caption {display: block;}
+    </style>
+  </head>
+  <body>
+
+<textarea id="source">
+
+class: center, middle
+
+## IMSE 586 
+## Big Data Analytics and Visualization
+<br/>
+### Instructor: Fred Feng
+### Lecture 9
+
+---
+# Clustering
+
+.center[![:scale 100%](images/clustering_animals.png)]
+
+How can we group animals into categories based on their characteristics?
+
+---
+# Clustering
+
+.center[![:scale 100%](images/clustering_animals_2.png)]
+
+How can we group animals into categories based on their characteristics?
+
+---
+# What is clustering?
+
+Group objects (e.g., animals, customers) based on their characteristics, 
+
+--
+
+so that the objects 
+
+- .red[within each group] are quite .red[similar] to each other
+
+--
+
+- .green[in different groups] are quite .green[different] from each other
+
+--
+
+Primarily an exploratory technique to discover hidden structures of the data.
+
+
+---
+# Clustering example
+
+.center[![:scale 70%](images/cluster_example.png)]
+
+---
+# Why clustering?
+
+Taxonomy description
+- Identify natural groups within the data.
+- Often used as a prelude to more focused analysis or decision processes (e.g., classification)
+
+--
+
+<br>
+
+Data simplification
+- The ability to analyze groups of similar observations instead of all individual observations.
+
+
+---
+# Examples of clustering applications
+
+- Market segmentation
+  - Identify subgroups of people who might be more receptive to a particular form of advertising
+
+--
+
+- Recommender systems
+
+   - Videos, movies, books, e-commerce, etc.
+
+--
+
+- Credit card fraud detection
+
+--
+
+- Medical image segmentation
+
+
+---
+# .red[Classification] v.s. .green[clustering]
+
+.red[Classification]
+- Classify objects into .blue[pre-defined] groups.
+  - What digit (0-9) or letter (A-Z) is in the image?
+
+--
+
+- Need training data to build the model
+
+--
+
+.green[Clustering]
+- Find natural groups in data that are .blue[not pre-defined].
+  - Often used as a lead-in to classification.
+- Do NOT need training data
+
+---
+# .red[Supervised] v.s. .green[unsupervised] learning
+
+.red[Supervised learning]
+- The model is built using labeled data (training data).
+- Examples: regression, classification, neural nets
+
+--
+
+<br>
+
+.green[Unsupervised learning]
+- No training data 
+- The model is built based on commonalities in data.
+- Examples: clustering, anomaly detection, principle component analysis
+
+---
+# Selecting cluster features
+
+Include only features that
+- characterize the objects being clustered
+
+--
+
+<br>
+
+"Irrelevant" features can not be excluded from the analysis once it begins.
+
+--
+
+<br>
+
+Selecting features requires domain knowledge.
+
+
+---
+# Measuring the distance (similarity)
+
+.center[![:scale 70%](images/dist.png)]
+
+
+$$
+\begin{aligned}
+\text{Euclidean distance}&=\sqrt{(X_2-X_1)^2 + (Y_2-Y_1)^2} \\\
+\text{Manhattan distance}&=|X_2-X_1| + |Y_2-Y_1| \\\
+\end{aligned}
+$$
+
+--
+
+$$\text{Minkowski dist.}=[(|X_2-X_1|)^p + (|Y_2-Y_1|)^p]^{\frac{1}{p}}$$
+
+
+---
+# Standardizing features
+
+Feature scales can make a big difference in groupings.
+
+Features of varying scales should be standardized before clustering. 
+
+The standard score of a sample $x$ is calculated as
+
+$$z=\frac{x-u}{s}$$
+
+where $u$ is the mean of the samples, and $s$ is the standard deviation of the samples.
+
+---
+# Standardizing features
+
+<br>
+
+|&nbsp;&nbsp;Object&nbsp;&nbsp;|Purchase<br>&nbsp;&nbsp;probability&nbsp;&nbsp;|&nbsp;Viewing time&nbsp;<br>in .red[minutes]|&nbsp;Viewing time&nbsp;<br> in .green[seconds]|
+|:---:|:---:|:---:|:---:|
+|A|60|3.0|180|
+|B|65|3.5|210|
+|C|63|4.0|240|
+
+---
+# (Euclidean) distances of the pairs
+
+When viewing time is measured in .red[minutes] 
+
+|&nbsp;&nbsp;Object pair&nbsp;&nbsp;|&nbsp;&nbsp;Value&nbsp;&nbsp;|&nbsp;&nbsp;Rank&nbsp;&nbsp;|
+|:---:|:---:|:---:|
+|A-B|5.025|3|
+|A-C|3.162|2|
+|B-C|2.062|1|
+
+--
+
+When viewing time is measured in .green[seconds] 
+
+|&nbsp;&nbsp;Object pair&nbsp;&nbsp;|&nbsp;&nbsp;Value&nbsp;&nbsp;|&nbsp;&nbsp;Rank&nbsp;&nbsp;|
+|:---:|:---:|:---:|
+|A-B|30.41|2|
+|A-C|60.07|3|
+|B-C|30.06|1|
+
+---
+
+# After the standardization
+
+
+|&nbsp;&nbsp;Object&nbsp;&nbsp;|Purchase<br>&nbsp;&nbsp;probability&nbsp;&nbsp;|&nbsp;Viewing&nbsp;&nbsp;&nbsp;<br>time&nbsp;&nbsp;&nbsp;|
+|:---:|:---:|---:|
+|A|-1.06|-1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|B|0.93|0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|C|0.13|1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+
+--
+
+(Euclidean) distance using the standardized values
+
+|&nbsp;&nbsp;Object pair&nbsp;&nbsp;|&nbsp;&nbsp;Value&nbsp;&nbsp;|&nbsp;&nbsp;Rank&nbsp;&nbsp;|
+|:---:|:---:|:---:|
+|A-B|2.22|2|
+|A-C|2.33|3|
+|B-C|1.28|1|
+
+---
+
+# The clustering problem
+
+$$
+\begin{aligned}
+n \text{ objects: }& x_1, x_2, \cdots, x_n \\\
+\\\
+k \text{ clusters: }& C=\\{C_1, C_2, \cdots, C_k\\}
+\end{aligned}
+$$
+
+Objective: minimize the .red[within-cluster sum-of-squares] (often termed .red[inertia]).
+
+
+$$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
+
+$$\text{where $\mu_i$ is the centroid of cluster $C_i$.}$$
+
+
+
+---
+
+$$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
+
+
+.center[![:scale 65%](images/kmeans_inertia.png)]
+
+
+---
+
+$$
+\begin{aligned}
+n \text{ objects: }& x_1, x_2, \cdots, x_n \\\
+\\\
+k \text{ clusters: }& C=\\{C_1, C_2, \cdots, C_k\\}
+\end{aligned}
+$$
+
+$$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
+
+- This is a difficult optimization problem. Why?
+
+--
+
+  - Ways to partition $n$ objects into $k$ clusters: $k^n$
+
+--
+
+- Fortunately, a simple algorithm can be used to provide a local optimum to the problem.
+
+---
+*k*-means algorithm demonstration: At the start, each data point is not assigned to a cluster yet.
+
+.center[![:scale 100%](images/kmeans_0.png)]
+
+
+---
+Step 1. We start by randomly selecting $k$ objects as the initial centroids (often called "seeds")
+
+.center[![:scale 100%](images/kmeans_1.png)]
+
+---
+
+Step 2. Each object is assigned to a cluster whose centroid is closest to this object. 
+
+.center[![:scale 100%](images/kmeans_1.png)]
+
+---
+
+Step 2. Each object is assigned to a cluster whose centroid is closest to this object. 
+
+.center[![:scale 100%](images/kmeans_2.png)]
+
+---
+
+Step 3. We update the cluster centroids using the mean of the objects in each cluster. 
+
+.center[![:scale 100%](images/kmeans_2.png)]
+
+---
+
+Step 3. We update the cluster centroids using the mean of the objects in each cluster. 
+
+.center[![:scale 100%](images/kmeans_3.png)]
+
+
+---
+
+Step 4. We repeat the earlier step of re-assigning each object to a cluster whose (updated) centroid is closest.
+
+.center[![:scale 100%](images/kmeans_3.png)]
+
+---
+
+Step 4. We repeat the earlier step of re-assigning each object to a cluster whose (updated) centroid is closest.
+
+.center[![:scale 100%](images/kmeans_4.png)]
+
+---
+
+Step 5. After the re-assignments, we repeat the earlier step of updating the cluster centroids again.
+
+
+.center[![:scale 100%](images/kmeans_4.png)]
+
+---
+
+Step 5. After the re-assignments, we repeat the earlier step of updating the cluster centroids again.
+
+
+.center[![:scale 100%](images/kmeans_5.png)]
+
+---
+
+Step 6. We repeat the process, the cluster assignments do not change at all. 
+We've reached the convergence. 
+
+
+.center[![:scale 100%](images/kmeans_5.png)]
+
+
+---
+# *k*-means clustering
+
+To group $n$ objects into $k$ clusters,
+
+1. Randomly assign $k$ cluster centroids (i.e., seeds). 
+
+2. Iterate until the cluster assignments stop changing:
+
+  - For each object, assign it to the cluster whose centroid is closest.
+
+  - For each cluster, compute the cluster centroid.
+
+---
+# Limitations to the *k*-means method
+
+<br>
+
+- *k*-means is an example of a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm).
+  - Making locally optimal choices at each step with the hope of reaching the globally optimal result.
+  - The globally optimum may not be achieved. 
+
+--
+
+<br> 
+
+- The final result may be sensitive to the initial seed assignments. 
+
+---
+What if we use some different initial centroids?
+
+.center[![:scale 100%](images/kmeans_stuck_1.png)]
+
+---
+Assign objects to a cluster whose centroid is closest.
+
+.center[![:scale 100%](images/kmeans_stuck_2.png)]
+
+
+---
+Assign objects to a cluster whose centroid is closest.
+
+.center[![:scale 100%](images/kmeans_stuck_3.png)]
+
+
+---
+Update the centroids, and we are stuck...
+
+.center[![:scale 100%](images/kmeans_stuck_3.png)]
+
+---
+# Remedy
+
+In practice, we typically run the algorithm multiple times (e.g., 10) with different initial seed assignments. 
+
+The final results will be the best output of consecutive runs in terms of minimizing the inertia.
+
+$$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
+
+---
+# The number of clusters $k$
+
+$k$ is a hyperparameter that must be pre-specified. 
+
+How to determine the best value of $k$?
+
+.center[![:scale 60%](images/elbow.png)]
+
+Select $k$ at the ".red[elbow point]", where "mountain" ends and "rubble" begins.
+
+---
+# Silhouette analysis
+
+For each object, calculate
+- mean .red[intra]-cluster distance $a$
+- mean .green[nearest]-cluster distance $b$
+
+.center[![:scale 65%](images/kmeans_4.png)]
+
+---
+For each object, calculate
+- mean .red[intra]-cluster distance $a$
+- mean .green[nearest]-cluster distance $b$
+
+$b-a$ measures how similar an object is to its own cluster compared to other clusters.
+
+We divide it by $\max(a, b)$ to make it between -1 and 1. 
+
+$$\text{Silhouette coefficient}=\frac{b-a}{\max(a, b)}$$
+
+Metric: the mean silhouette coefficient over all objects.
+
+We pick a $k$ that gives the highest value of this metric. 
+
+???
+
+The best score is 1, and the worse score is −1. 
+
+---
+# Silhouette analysis
+
+<br>
+
+.center[![:scale 80%](images/silhouette.png)]
+
+---
+
+# The number of clusters $k$
+
+Constraints from downstream applications
+
+--
+
+- Customer segmentation for promotional campaign
+
+--
+
+- How many clothing sizes to offer?
+
+--
+
+.center[![:scale 100%](images/wetsuit.jpg)]
+
+---
+$k$-means is limited to linear cluster boundaries. 
+
+.center[![:scale 45%](images/kmeans_nonlinear_1.png)]
+
+--
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*k*-means clustering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spectral clustering
+
+.center[![:scale 45%](images/kmeans_nonlinear_2.png)
+![:scale 45%](images/kmeans_nonlinear_3.png)]
+
+
+---
+# Further resources
+
+<br>
+
+- [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/) Chapter 10.3 (p385-390)
+
+- [Clustering (Wikipedia)](https://en.wikipedia.org/wiki/Cluster_analysis)
+
+- [Clustering in `scikit-learn`](https://scikit-learn.org/stable/modules/clustering.html)
+
+<!-- ------------------------------------------ -->
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script>
+remark.macros.scale = function (percentage) {
+  var url = this;
+  return '<img src="' + url + '" style="width: ' + percentage + '" />';
+};
+
+var slideshow = remark.create({
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'github', 
+  highlightSpans: true,
+  highlightLines: true,
+});
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          inlineMath: [['$','$'], ['\\(','\\)']]
+          }
+      });
+
+      MathJax.Hub.Configured();
+</script>
+</body>
+</html>
