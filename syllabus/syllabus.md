@@ -59,6 +59,19 @@ Rayane Moustafa
 
 **Office hours**: TBA
 
+
+## What is Canvas used for?
+
+We have our course Canvas page at <https://canvas.umd.umich.edu/courses/527075>. 
+
+We will use it for
+
+- Announcements (We recommend turning the email notification on or checking it often.)
+- Lecture videos & other learning materials
+- Homework & reading assignments
+- Project submissions
+- Grades
+
 ## What is this course about?
 
 Introduction to big data analytics and visualization. This course provides students with hands-on experience of using analytical and predictive modeling techniques and software for practical applications. Topics include data visualization principles and techniques, data processing and manipulation, and statistical learning methods such as linear regression, classification, model selection, clustering, principal components analysis, and time-series analysis.
