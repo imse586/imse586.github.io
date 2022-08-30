@@ -53,7 +53,7 @@ Please note I may *not* respond to
 
 ## Who is the <font color="red">GSI</font>?
 
-Rayan Moustafa
+Rayane Moustafa
 
 <rayanem@umich.edu>
 
