@@ -32,12 +32,12 @@
 
 <script>
 
-    var md = window.markdownit({
+    const md = window.markdownit({
                 html: true,
             });
 
     $.get( "project-guidelines.md", function( data ) {
-            var result = md.render(data);
+            const result = md.render(data);
             $('.markdown-body').html(result);
     },'text');
 

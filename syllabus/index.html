@@ -32,12 +32,12 @@
 
 <script>
 
-    var md = window.markdownit({
+    const md = window.markdownit({
                 html: true,
             });
 
-    $.get( "syllabus.md", function( data ) {
-            var result = md.render(data);
+    $.get( "syllabus.md", function(data) {
+            const result = md.render(data);
             $('.markdown-body').html(result);
     },'text');
     
