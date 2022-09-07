@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMSE 586 Data visualization</title>
+    <meta charset="utf-8">
+    <link href='./style.css' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+
+<textarea id="source">
+
+class: center, middle
+
+## IMSE 586 
+## Big Data Analytics and Visualization
+
+<br/>
+### Data visualization
+<br/>
+### Instructor: Fred Feng
+
+
+---
+class: center
+
+# Data visualization principles and pitfalls
+
+![:scale 55%](./images/vdqi_cover.png)
+
+---
+# A word of caution
+
+- These principles are from expert experience.
+- They are not mathematically or logically proven. 
+- Treat the principles with skepticism.
+- Focus on understanding the reasoning behind these principles rather than following them blindly. 
+
+---
+# The Principle of Proportional Ink
+
+<!-- The representation of numbers, as physically measured on the surface of the graphic itself, should be directly proportional to the numerical quantities represented. -->
+
+<br>
+
+The representation of numbers,
+
+as physically measured on the surface of the graphic itself (i.e., the amount of ink used),
+
+.red[should be directly proportional to the numerical quantities represented.]
+
+
+---
+class: center
+
+![:scale 100%](./images/best-shooter.png)
+
+--
+
+In a bar chart the y-axis should always start from zero. 
+
+
+---
+class: center
+
+![:scale 60%](./images/barchart_obamacare_1.png)
+
+--
+
+![:scale 60%](./images/barchart_obamacare_2.png)
+
+<sup><sup>[Source](https://twitter.com/JustinWolfers/status/450700833865605120)</sup></sup>
+
+
+---
+class: center
+
+![:scale 70%](https://i.insider.com/50dc6d9669beddda7700000d?width=800&format=jpeg&auto=webp)
+
+<sup><sup>[Source](https://www.businessinsider.com/the-top-10-most-read-books-in-the-world-infographic-2012-12)</sup></sup>
+
+
+---
+class: center
+
+# Radial bar chart (or donut chart)
+
+![:scale 100%](images/donut_chart.png)
+
+
+---
+class: center
+
+# Line graph need .red[not] include zero
+
+![:scale 90%](images/linegraph_1.png)
+
+---
+class: center
+
+# When line graph .red[should] include zero
+
+![:scale 90%](images/linegraph_2.png)
+
+
+---
+class: center
+
+# When line graph .red[should] include zero
+
+![:scale 90%](images/linegraph_2.png)
+
+
+---
+![:scale 100%](images/national_review.png)
+
+---
+
+# When line graph .red[should not] include zero
+
+![:scale 90%](images/national_review_2.png)
+
+<sup>[Source](https://www.washingtonpost.com/news/the-fix/wp/2015/12/14/why-the-national-reviews-global-temperature-graph-is-so-misleading/)</sup>
+
+---
+![:scale 90%](images/national_review_3.png)
+
+<sup>[Source](https://twitter.com/bizweekgraphics/status/676533647567114240)</sup>
+
+
+---
+class: center
+
+![:scale 95%](images/nobelprize.png)
+
+--
+
+# Show data variation, not design variation. 
+
+
+---
+class: center
+
+![:scale 90%](images/murdercase.png)
+
+<sup>[Source](https://viz.wtf/post/162403143973/groundhog-year)</sup>
+
+---
+class: center
+
+![:scale 100%](images/income_growth.png)
+
+<sup>[Source](https://wir2018.wid.world/part-2.html)</sup>
+
+
+---
+class: center
+
+![:scale 55%](images/gundeath_1.png)
+
+--
+
+# Follow conventions
+
+---
+class: center
+
+![:scale 55%](images/gundeath_2.png)
+
+<sup>[Source](https://twitter.com/PFedewa/status/436203421708730368)</sup>
+
+
+---
+class: center
+
+# Bar charts
+
+![:scale 95%](images/google_barcharts.png)
+
+
+---
+class: center
+
+![:scale 100%](images/barcharts_paper.png)
+
+.left[<sup>[Source](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128)</sup>]
+
+
+---
+# Recommendations
+
+- Instead of plotting only the summary statistics, show the individual data whenever possible.
+- Scatter plots are often a good choice.
+- Box plots can be added when appropriate. 
+
+
+---
+class: center
+
+# How much space does drivers give to cyclists when passing?
+
+![:scale 95%](images/overtaking.png)
+
+.left[<sup>[Source](https://linkinghub.elsevier.com/retrieve/pii/S0001457518301143)</sup>]
+
+
+---
+class: center
+
+![:scale 60%](images/cumulative_graph_1.png)
+
+--
+
+![:scale 60%](images/cumulative_graph_2.png)
+
+.left[Cumulative graphs make things looks more positive than they really are.]
+
+
+---
+class: center
+
+![:scale 60%](images/apple_1.png)
+
+--
+
+![:scale 60%](images/apple_2.png)
+
+
+.left[<sup>[Source](https://qz.com/122921/the-chart-tim-cook-doesnt-want-you-to-see/)</sup>]
+
+
+---
+# Graphical integrity principles
+
+<br>
+
+# The number of information-carrying dimensions depicted should not exceed the number of dimensions in the data. 
+
+---
+class: center
+
+![:scale 50%](images/vdqi_dollar.png)
+
+---
+class: center
+
+![:scale 50%](images/3dpi_1.png)
+
+Is slice A bigger than, equal to, or smaller than slice C?
+
+--
+
+![:scale 50%](images/3dpi_2.png)
+
+
+---
+class: center
+
+<br>
+
+![:scale 80%](images/3dpi_3.png)
+
+<br>
+Friends don’t let friends make 3D pie charts.
+
+---
+class: center
+
+<br>
+
+![:scale 90%](images/apple_pie.png)
+
+.left[<sup>[Source](https://www.engadget.com/2008/01/15/live-from-macworld-2008-steve-jobs-keynote/)</sup>]
+
+---
+
+![:scale 100%](images/pie_bar.png)
+
+- Even a 2D pie chart doesn’t work as well as a bar chart. 
+
+- It requires comparing two angles, which is harder for human visual system than comparing position in a bar chart. 
+
+---
+<br>
+![:scale 100%](images/3d_line.png)
+
+
+---
+<br>
+![:scale 100%](images/3d_bar.png)
+
+---
+<br><br>
+![:scale 100%](images/3d_excel.png)
+
+<br>
+Just because it’s there doesn’t mean you should use it. 
+
+---
+
+
+.center[![:scale 45%](./images/calling-bullshit.png)]
+
+
+.center[Chap. 7: Data visualization]
+
+<!-- .center[[Book website](https://www.penguinrandomhouse.com/books/563882/calling-bullshit-by-carl-t-bergstrom-and-jevin-d-west/)] -->
+
+
+
+
+<!-- ------------------------------------------ -->
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML&delayStartupUntil=configured"></script>
+<script>
+  remark.macros.scale = function (percentage) {
+    var url = this;
+    return '<img src="' + url + '" style="width: ' + percentage + '" />';
+  };
+  
+  var slideshow = remark.create({
+    countIncrementalSlides: false,
+    highlightLanguage: 'python',
+    highlightStyle: 'magula', 
+    highlightSpans: true,
+    highlightLines: true,
+  });
+  
+        // Setup MathJax
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        });
+  
+        MathJax.Hub.Configured();
+  </script>
+
+</body>
+</html>
