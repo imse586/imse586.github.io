@@ -40,25 +40,29 @@ In the Zoom office hour
 
 ## How can I contact you?
 
-<fredfeng@umich.edu>
-
-**Email** is the preferred way to contact me.
+**Email** is the preferred way to contact the instructors.
 - Use your University email
 - Use subject line: **IMSE 586 - DESCRIBE YOUR TOPIC (e.g., homework 1 doubts)**
 
-Please note I may *not* respond to
+What is your email address?
+
+- In most cases (e.g., asking homework questions), please use our instructors email, so all instructors (Dr. Feng and the GSI) can get your email for a possibly quicker response. Instructors email: <imse586instructors@umich.edu>
+
+- If you prefer to talk to Dr. Feng individually, please email to <fredfeng@umich.edu>
+
+Please note we may *not* respond to
 - Emails that do not comply with the above rules.
 - Canvas messages
 - Canvas comment sections under each assignment.
 
 ## Who is the <font color="red">GSI</font>?
 
-Rayane Moustafa
+Rayane Moustafa (<rayanem@umich.edu>)
 
-<rayanem@umich.edu>
+The GSI's office hours are held on Zoom at <https://umich.zoom.us/my/rayanemoustafa>
 
-**Office hours**: TBA
-
+- Thursdays 11:00 AM - noon
+- Fridays 11:00 AM - noon
 
 ## What is Canvas used for?
 
