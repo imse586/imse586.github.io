@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMSE 586 Git & GitHub</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {font-family: 'Roboto'; font-weight: bold; line-height: 1.4;}
+      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:30px;}
+      .remark-slide-content h1 {font-size: 40px; text-align: center;}
+      .remark-slide-content p, .remark-slide-content li {font-size:30px; margin: 20px 0;}
+      a:link {text-decoration: none;}
+      img{max-height: 100%;}
+      .quote_author {display: block; text-align: right;}
+      .source {font-size: 24px;}
+      .red {color:red;}
+      .green {color:green;}
+      .gray {color:gray}
+    </style>
+  </head>
+  <body>
+
+<textarea id="source">
+
+class: center, middle
+
+
+### Introduction to Git & GitHub
+<br/>
+
+![:scale 80%](./images/branching-illustration@2x.png)
+
+---
+class: middle, center
+
+![:scale 55%](./images/phd101212s.gif)
+
+[.gray[Image source]](https://phdcomics.com/comics/archive_print.php?comicid=1531)
+
+
+---
+class: middle, center
+
+[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+
+---
+
+Git is a free and open source distributed version control system.
+
+---
+
+
+```
+$ git --version
+```
+
+---
+
+# One-time setup
+
+```
+$ git config --global user.name "Charlie Brown"
+```
+
+Set a name that is identifiable for credit when review version history.
+
+--
+
+<br>
+```
+$ git config --global user.email "x@example.com"
+```
+
+Set an email address that will be associated with each history marker.
+
+
+---
+<!-- # Basic Git commands -->
+
+- `git init`
+- `git status`
+- `git add [file]`
+- `git commit -m "[descriptive message]"`
+- `git diff`
+- `git log`
+- `git clone [url]`
+- `git remote add [alias] [url]`
+- `git push [alias] [branch]`
+- `git pull [alias] [branch]`
+
+
+---
+<!-- # Basic Git commands -->
+
+- `git branch`
+- 
+
+
+---
+# Initialize a new Git repository.
+
+```
+$ git init
+```
+
+<br>
+
+Initialize an existing directory as a Git repository.
+
+
+
+---
+# Show the status of the git repository
+
+```
+$ git status
+```
+
+- Show modified files in working directory, staged for your next commit. 
+
+---
+# Add files to the staging area
+
+```
+$ git add [file_1] [file_2]
+```
+
+Add the files (as they look now) to the staging area for your next commit.
+
+<br>
+
+```
+$ git add .
+```
+
+Add all files in working directory to the staging area.
+
+
+---
+# Commit the staged contents as a new snapshot
+
+
+```
+$ git commit -m "Update course syllabus."
+```
+
+---
+# Isolating work in branches
+
+```
+$ git branch
+```
+
+List your branches. 
+
+A * will apear next to the currently active branch. 
+
+--
+
+<br>
+```
+$ git branch new_branch_name
+```
+
+Create a new branch at the current commit. 
+
+---
+
+```
+$ git checkout branch_name
+```
+
+Switch to another branch. 
+
+
+---
+# Show the commit logs
+
+```
+$ git log
+```
+
+
+[Official doc](https://git-scm.com/docs/git-log)
+
+
+
+---
+# Ignoring files
+
+Preventing unintentially commiting of files or folders. 
+
+Save a file with desired patterns as .red[`.gitignore`] with the following contents.
+
+```
+.notes
+logs/
+```
+
+
+---
+# Share & update
+
+
+```
+$ git remote add [alias] [url]
+```
+
+
+---
+
+```
+$ git clone [url]
+```
+
+
+
+<!-- ------------------------------------------ -->
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script>
+remark.macros.scale = function (percentage) {
+  var url = this;
+  return '<img src="' + url + '" style="width: ' + percentage + '" />';
+};
+
+var slideshow = remark.create({
+  countIncrementalSlides: false,
+  highlightLanguage: 'shell',
+  highlightStyle: 'tomorrow-night-bright', 
+  highlightSpans: true,
+  highlightLines: true,
+});
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          inlineMath: [['$','$'], ['\\(','\\)']]
+          }
+      });
+
+      MathJax.Hub.Configured();
+</script>
+</body>
+</html>
