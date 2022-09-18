@@ -42,63 +42,101 @@ class: middle, center
 
 
 ---
+# What is Git?
+
+.center[![:scale 50%](./images/Git-Logo-2Color.png)]
+
+<br>
+
+Git is a free & open source version control system.
+
+<br>
+
+.center[[Official website](https://git-scm.com/)]
+
+---
 class: middle, center
 
 [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 
 ---
+# Check Git version
 
-Git is a free and open source distributed version control system.
-
----
-
-
+Git command
 ```
 $ git --version
 ```
 
+--
+<br>
+With output
+
+```
+$ git --version
+git version 2.37.3
+```
+
 ---
 
-# One-time setup
+# One-time setup - user name
+
+Set a name that is identifiable for credit when review version history.
 
 ```
 $ git config --global user.name "Charlie Brown"
 ```
 
-Set a name that is identifiable for credit when review version history.
 
---
 
-<br>
+---
+# One-time setup - user email
+
+Set an email address that will be associated with each history marker.
+
 ```
 $ git config --global user.email "x@example.com"
 ```
 
-Set an email address that will be associated with each history marker.
+
 
 
 ---
-<!-- # Basic Git commands -->
+# Seven most basic Git commands
 
 - `git init`
 - `git status`
 - `git add [file]`
 - `git commit -m "[descriptive message]"`
-- `git diff`
-- `git log`
-- `git clone [url]`
 - `git remote add [alias] [url]`
 - `git push [alias] [branch]`
 - `git pull [alias] [branch]`
-
+<!-- - `git clone [url]` -->
 
 ---
-<!-- # Basic Git commands -->
 
-- `git branch`
-- 
+# Staging area
 
+<div class="mermaid">
+
+  flowchart LR
+  A([working directory]) -->|`git add`| B([staging area]) -->|`git commit`| C([repository])
+  style A fill:tomato
+  style B fill:orange
+  style C fill:lightgreen
+
+</div>
+
+
+Staging area: an intermediate area where a subset of the modified files can be grouped for a commit.
+
+It helps to split up unrelated changes in your working directoary into multiple, more meaningful commits.
+
+- File 1: changes to fix bug A
+- File 2: changes to fix bug B
+- File 3: changes to fix bug A
+
+.center[[Further reading](https://git-scm.com/about/staging-area)]
 
 ---
 # Initialize a new Git repository.
@@ -107,9 +145,6 @@ Set an email address that will be associated with each history marker.
 $ git init
 ```
 
-<br>
-
-Initialize an existing directory as a Git repository.
 
 
 
@@ -147,35 +182,6 @@ Add all files in working directory to the staging area.
 ```
 $ git commit -m "Update course syllabus."
 ```
-
----
-# Isolating work in branches
-
-```
-$ git branch
-```
-
-List your branches. 
-
-A * will apear next to the currently active branch. 
-
---
-
-<br>
-```
-$ git branch new_branch_name
-```
-
-Create a new branch at the current commit. 
-
----
-
-```
-$ git checkout branch_name
-```
-
-Switch to another branch. 
-
 
 ---
 # Show the commit logs
@@ -218,6 +224,47 @@ $ git clone [url]
 ```
 
 
+---
+class: middle, center
+
+Intermediate Git commands
+
+---
+# Branching commands
+
+- `git branch`
+- 
+
+---
+# Isolating work in branches
+
+```
+$ git branch
+feature
+* main
+```
+
+List your branches. 
+
+A * will apear next to the currently active branch. 
+
+--
+
+<br>
+```
+$ git branch new_branch_name
+```
+
+Create a new branch at the current commit. 
+
+---
+
+```
+$ git checkout branch_name
+```
+
+Switch to another branch. 
+
 
 <!-- ------------------------------------------ -->
 
@@ -236,10 +283,10 @@ remark.macros.scale = function (percentage) {
 
 var slideshow = remark.create({
   countIncrementalSlides: false,
-  highlightLanguage: 'shell',
+  highlightLanguage: 'python',
   highlightStyle: 'tomorrow-night-bright', 
   highlightSpans: true,
-  highlightLines: true,
+  highlightLines: false,
 });
 
       // Setup MathJax
@@ -252,5 +299,10 @@ var slideshow = remark.create({
 
       MathJax.Hub.Configured();
 </script>
+
+<script src="./mermaid.min.js"></script>
+<link rel="stylesheet" href="./mermaid.css">
+<script>mermaid.initialize({startOnLoad:true});</script>
+
 </body>
 </html>
