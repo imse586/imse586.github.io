@@ -99,19 +99,13 @@ $ git config --global user.email "x@example.com"
 ```
 
 
-
-
 ---
-# Seven most basic Git commands
+# Four most basic Git commands
 
 - `git init`
 - `git status`
 - `git add [file]`
 - `git commit -m "[descriptive message]"`
-- `git remote add [alias] [url]`
-- `git push [alias] [branch]`
-- `git pull [alias] [branch]`
-<!-- - `git clone [url]` -->
 
 ---
 
@@ -166,6 +160,10 @@ $ git add [file_1] [file_2]
 
 Add the files (as they look now) to the staging area for your next commit.
 
+- Each commit should be a logical unit of change
+
+--
+
 <br>
 
 ```
@@ -183,6 +181,29 @@ Add all files in working directory to the staging area.
 $ git commit -m "Update course syllabus."
 ```
 
+
+---
+class: middle, center
+
+
+![:scale 100%](./images/git_commit_2x.png)
+
+
+[Source](https://cbea.ms/git-commit/)
+
+
+---
+
+# Commit message examples
+
+```
+$ git log --oneline
+aeb571a Update pandas version
+f4b747c Add openpyxl to requirements.txt.
+c77217e Support setting dates using date picker.
+c60f02d Fix chart errors when dates are less than one week.
+```
+
 ---
 # Show the commit logs
 
@@ -194,18 +215,21 @@ $ git log
 [Official doc](https://git-scm.com/docs/git-log)
 
 
+---
+
+Sharing and collaborating
+
 
 ---
-# Ignoring files
+# GitHub, GitLab, BitBucket
 
-Preventing unintentially commiting of files or folders. 
+---
+# A few more basic Git commands for collaborating
 
-Save a file with desired patterns as .red[`.gitignore`] with the following contents.
-
-```
-.notes
-logs/
-```
+- `git remote add [alias] [url]`
+- `git push [alias] [branch]`
+- `git pull [alias] [branch]`
+<!-- - `git clone [url]` -->
 
 
 ---
@@ -230,6 +254,25 @@ class: middle, center
 Intermediate Git commands
 
 ---
+class: middle, center
+
+# Branching
+
+---
+
+.center[![:scale 80%](./images/git-branch.svg)]
+
+Branching allows us to
+- work on multiple development in parallel
+- keep the main branch free from questionable code
+
+
+[Source](https://www.atlassian.com/git/tutorials/using-branches)
+
+
+
+
+---
 # Branching commands
 
 - `git branch`
@@ -238,32 +281,51 @@ Intermediate Git commands
 ---
 # Isolating work in branches
 
+
+At a minimum, projects should have development and production branches.
+
+
+---
+# List your branches
+
 ```
 $ git branch
 feature
 * main
 ```
 
-List your branches. 
-
 A * will apear next to the currently active branch. 
 
---
+---
+# Create a new branch
 
-<br>
 ```
-$ git branch new_branch_name
+$ git branch crazy-experiment
 ```
 
-Create a new branch at the current commit. 
+Create a new branchn called `crazy-experiment` at the current commit. 
 
 ---
+# Switch to another branch
 
 ```
 $ git checkout branch_name
 ```
 
-Switch to another branch. 
+
+
+
+---
+# Ignoring files
+
+Preventing unintentially commiting of files or folders. 
+
+Save a file with desired patterns as .red[`.gitignore`] with the following contents.
+
+```
+.notes
+logs/
+```
 
 
 <!-- ------------------------------------------ -->
@@ -300,7 +362,7 @@ var slideshow = remark.create({
       MathJax.Hub.Configured();
 </script>
 
-<script src="./mermaid.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.7/mermaid.min.js"></script>
 <link rel="stylesheet" href="./mermaid.css">
 <script>mermaid.initialize({startOnLoad:true});</script>
 
