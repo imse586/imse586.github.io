@@ -56,6 +56,7 @@ As a rule of thumb, your project should be significantly more complex than the h
     - If you do not already have an Overleaf account, you will need to register for one. 
     The *free* plan is good enough.
     When register, use your UMICH email. 
+    - Note we expect *all* team members to use Overleaf as a collaberative tool (think of a Google Docs) when drafting the proposal.
     - You will need to learn some basic LaTeX yourself and with your team using online resources. Here are two good starting points:
         - [The Overleaf LaTex Tutorials](https://www.overleaf.com/learn/latex/Tutorials)
         - [How to write a thesis using LaTeX full tutorial (YouTube video)](https://www.youtube.com/watch?v=zqQM66uAig0) 
@@ -64,7 +65,8 @@ As a rule of thumb, your project should be significantly more complex than the h
     - Tips: *Recompile* often, so that if there is a compile error, it's easier to track it down. 
 
 
-- The proposal should be no more than two (2) pages (not including the Reference section). It should include the following
+- The proposal should be no more than two (2) pages (not including the References section). 
+  It should include the following
     - **Project tentative title**
     - **Background**: A brief description of the background of the problem
     - **Research questions**: What do you want to figure out?
