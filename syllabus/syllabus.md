@@ -141,7 +141,7 @@ See the top part of each provided homework Jupyter notebook for the format requi
 
 ## What are the <font color="red">Reading assignments</font>?
 
-There will be roughly bi-weekly reading assignments for a total of six (6) reading assignments. 
+There will be roughly bi-weekly reading assignments for a total of five (5) reading assignments. 
 For each reading, you will submit a brief summary with your own comments.
 The readings are listed below in case you want to get a head start.
 
@@ -152,7 +152,7 @@ Required readings
 - [*How to Think about Data Visualization*](https://www.youtube.com/watch?v=vTingdk_pVM) by Jake VanderPlas
 
 
-Elective readings (Listed in no particular order. Pick any two readings/talks from the list.)
+Elective readings (Listed in no particular order. Pick any one reading/talk from the list.)
 - [*Data-Driven Modeling to Understand (and Predict?) the Impacts of Climate Variability and Change*](https://www.youtube.com/watch?v=PEdBUtyiPyo) by Seth Guikema
 - [*Shaping a City with Open Data*](https://www.youtube.com/watch?v=pPhXEeMlFTY) by Ben Wellington
 - [*A Programming Language to Heal the Planet Together: Julia*](https://www.youtube.com/watch?v=qGW0GT1rCvs) by Alan Edelman
