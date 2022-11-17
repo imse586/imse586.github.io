@@ -65,7 +65,7 @@ As a rule of thumb, your project should be significantly more complex than the h
     - Tips: *Recompile* often, so that if there is a compile error, it's easier to track it down. 
 
 
-- The proposal should be no more than two (2) pages (not including the References section). 
+- The proposal should be no more than two (2) pages (not including the cover page and the References section). 
   It should include the following
     - **Project tentative title**
     - **Background**: A brief description of the background of the problem
@@ -124,7 +124,7 @@ To make sure your team are making satisfactory progress, your are required to su
 ### Progress report requirements
 - **Template**: You are required to use the progress report template on Overleaf (which will be provided to you later).
 - In the progress report, describe what your team has already completed and the remaining work plan. See the template for the required sections. 
-- The progress report should be around three (3) pages.
+- The progress report should be around three (3) pages (not including the cover page and the References section).
 - One submission per team.
 
 ### Progress report grading rubric
