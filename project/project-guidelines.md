@@ -26,20 +26,20 @@ However, they should only serve as supplementary components of your project.
 
 ## Important deadlines
 
-- **October 31 (Monday) at 6:11 PM**: Project proposal (team)
-- **November 30 (Wednesday) at 6:11 PM**: Progress report (team)
-- **December 12 (Monday) at 6:11 PM**
+- **October 31 (Tuesday) at 6:11 PM**: Project proposal (team)
+- **November 28 (Tuesday) at 6:11 PM**: Progress report (team)
+- **December 8 (Friday) at 6:11 PM**
     - Video presentation (team)
     - Project poster (team)
     - Jupyter notebook and data (team)
-- **December 13 (Tuesday) at 6:11 PM**
+- **December 11 (Monday) at 6:11 PM**
     - Peer evaluation form (individual)
 
 ---
 
 ## Project proposal (10% of project grade)
 
-Your team will decide on our own project topic and find the data that you wish to use.
+Your team will select your own project topic and find the data that you wish to use.
 You are required to submit a project proposal, so we can make sure your selected topic and data set(s) are suitable for the project and you are on the right track.
 
 Your project needs to be
@@ -80,7 +80,7 @@ As a rule of thumb, your project should be significantly more complex than the h
         (e.g., how you plan to analyze the data? what modeling work to conduct? 
         how to address the research questions based on the results?)
         Note I understand that we have not covered some of the modeling methods. See the [scheduled course topics](../) for more information. Describe your methods as best as you can.   
-    - (Optional) A brief description of what you have done so far.
+    - A brief description of what you have done so far.
 
 - You need to submit the PDF file generated from Overleaf to the according Canvas assignment.
 - One submission per team.
@@ -88,7 +88,7 @@ As a rule of thumb, your project should be significantly more complex than the h
 Note if you plan to use regression models in your project, they are mostly suited for [cross-sectional data](https://en.wikipedia.org/wiki/Cross-sectional_data)
 (Think of the data sets we used in the lectures and homework.)
 Cross-sectional data are what you should use for your project.
-Do *not* use [time-series data](https://en.wikipedia.org/wiki/Time_series) (e.g., outdoor temperature by dates), as the independence assumption in regression models is likely violated (e.g., today's temperature is highly correlated with (thus not independent to) yesterday's temperature.) 
+Do *not* use [time-series data](https://en.wikipedia.org/wiki/Time_series) (e.g., outdoor temperature by dates), as the independence assumption in regression models is likely violated (e.g., today's temperature is highly correlated with, and thus not independent to, yesterday's temperature.) 
 
 ### Proposal grading rubric
 
@@ -140,7 +140,7 @@ To make sure your team are making satisfactory progress, your are required to su
 
 ---
 
-## Video presentation (20% of project grade)
+## Video presentation (30% of project grade)
 
 Near the completion of the course, your team will submit a video presentation of your project.
 The presentation should include all major parts of your project, with a focus on the *results*. 
@@ -194,7 +194,7 @@ The presentation should include all major parts of your project, with a focus on
         The presentation went over by more than one (1) minute.
 
 ---
-## Research poster (40% of project grade)
+## Research poster (35% of project grade)
 
 You are required to submit a research poster.
 
@@ -211,7 +211,7 @@ Your poster should be different from your Jupyter notebook in some major ways:
     but may not necessarily know anything about Python, and they may not be familiar with the data sets you are using.
 - Thus, your poster should not include any codes (leave them in the notebook). 
     Rather, describe things in plain English.
-- You should also avoid using programing jargons (e.g., function names such as `groupby`), 
+- You should also avoid using programming jargons (e.g., function names such as `groupby`), 
     or anything specific to the data set (e.g., column names such as "co2_level_mi").
 
 ### Poster rubric
@@ -246,7 +246,7 @@ Your poster should be different from your Jupyter notebook in some major ways:
 
 
 ---
-## Jupyter notebook & data (20% of project grade)
+## Jupyter notebook & data (15% of project grade)
 
 You are required to submit all the jupyter notebook(s) and data used for the project. 
 
