@@ -24,7 +24,7 @@ You can watch the lecture videos and study on your own time during each week.
 
 [Dr. Fred Feng](http://www.umich.edu/~fredfeng/) ("Fred" is fine)
 
-## Who is the <font color="red">GSI</font>?
+<!-- ## Who is the <font color="red">GSI</font>? -->
 
 <!-- Rayane Moustafa (<rayanem@umich.edu>)
 
@@ -33,20 +33,21 @@ The GSI's office hours are held on Zoom at <https://umich.zoom.us/my/rayanemoust
 - Thursdays 11:00 AM - noon
 - Fridays 11:00 AM - noon -->
 
-TBA
+<!-- TBA -->
 
 
-## How can I contact the instructors?
+## How can I contact the instructor?
 
-**Email** is the preferred way to contact the instructors.
+**Email** is the preferred way to contact the instructor.
 
-- <imse586instructors@umich.edu> This is the instructor email address that you should use for most questions (e.g., homework and project). Your email will be directed to all the instructors (i.e., Dr. Feng and the GSI) which may provide you with a faster response.
-- If you prefer to talk to Dr. Feng individually, send email to <fredfeng@umich.edu>
 
-Email rules
-
+**Email rules**
+- <imse586instructors@umich.edu> This is the email address that you should use to help me keep my inbox organized.
+ <!-- for most questions (e.g., homework and project).  -->
+<!-- Your email will be directed to all the instructors (i.e., Dr. Feng and the GSI) which may provide you with a faster response. -->
+<!-- - If you prefer to talk to Dr. Feng individually, send email to <fredfeng@umich.edu> -->
 - You should include the course number **IMSE 586** at the beginning of the subject line, followed by a brief description with a few words. For example: **IMSE 586 - homework 1 doubts**
-- Use your University of Michigan email
+- Use your UMICH email (i.e., rather than your personal or other email addresses) when contacting us
 
 Please note the instructors may not respond to
 - Emails that do not comply with the rules above
@@ -54,9 +55,9 @@ Please note the instructors may not respond to
 - Canvas comments under an assignment.
 
 
-## When are <font color="red">office hours</font>?
+## When are the <font color="red">office hours</font>?
 
-**Dr. Feng’s office hours**
+<!-- **Dr. Feng’s office hours** -->
 
 All office hours by Dr. Feng are held on Zoom at <https://umich.zoom.us/my/fredfeng>
 - Wednesdays 3:00 PM - 4:00 PM
@@ -64,9 +65,9 @@ All office hours by Dr. Feng are held on Zoom at <https://umich.zoom.us/my/fredf
 - Occasionally, an office hour may need to be moved to a different time. In this case, a Canvas announcement will be sent. You can also refer to our [Course Calendar](../index.html#calendar) for the up-to-date office hour schedule.
 - If you are not able to attend during the above time, you can email Dr. Feng with a request for an appointment.
 
-**GSI’s office hours**
+<!-- **GSI’s office hours**
 
-TBA
+TBA -->
 
 **Zoom meeting policies**
 
@@ -230,9 +231,9 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
 - All course work (e.g., homework, project) must represent your own work.
 - You are *not* allowed to send or receive any course related materials (e.g., lecture notes, Jupyter notebooks, homework files) to or from another student. 
   Contact the instructors if you are unable to access any course materials. 
-- **Avoiding plagiarism**: You are not allowed to submit, as your own, work that is not the result of your own labor and thoughts. 
-  - Work that includes material derived in any way from the efforts of another author, either by direct quotation or paraphrasing, should be fully and properly documented. 
-  - To avoid plagiarism, you should cite all sources of both ideas and direct quotations, including those found on the internet. 
+- **Avoiding plagiarism**: You are not allowed to submit, as your own, work that is not the result of *your own labor and thoughts*. 
+  - All your submitted work that includes material derived in any way from another person or source (including online sources and generative AI such as Chat GPT or U-M GPT), either by direct quotation, paraphrasing, or modification, should be fully and properly cited. 
+  <!-- - To avoid plagiarism, you should cite all sources of both ideas and direct quotations, including those found on the internet.  -->
   - The citation should provide enough information so that the original source of the material can be located.
 - If you have any questions about whether something is or is not allowed, ask the instructor *beforehand*.
 
@@ -248,7 +249,6 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
   - A single offense will result in 0 points for the involved assignment *and* a reduction of three (3) letter grade levels in the final course grade (e.g., from A- to B-). 
   - Multiple offenses in assignments will result in a failing grade (E) for the course. 
   - If a student provided unauthorized help to other students, all parties will receive the same penalty.
-  - Once you have read this syllabus to completion, use *zephyr* as the answer to the question in the first homework.
 
 **Project rules**
 
@@ -267,7 +267,9 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
 ## What are the <font color="red">copyright</font> policies?
 
 You shall not send, upload, or distribute any of the course materials to another person or on the internet. 
-The course materials include, but not limited to, the lecture videos, Jupyter notebooks, and homework and the solutions.
+The course materials include, but not limited to, the lecture videos and notebooks, and homework and the solutions. 
+Once you have read this syllabus to completion, use *zephyr* as the answer to the question in the first homework.
+The instructor reserves the rights to apply course-level penalties, up to receiving a failing grade (E), to any copyright policy violations.
 
 ## Food pantry
 
@@ -282,3 +284,6 @@ Please see the Course Policies menu on Canvas for information on the following
 - Disabilities Services
 - Safety Statement
 - Harassment, Sexual Violence, Bias, and Discrimination
+
+## Miscellaneous
+The instructor reserves the rights to make any changes to this syllabus as deemed necessary.
