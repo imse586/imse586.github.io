@@ -13,12 +13,17 @@ An *introductory*, *technical*, and *hands-on* course on big data analytics and 
 
 - No prior programming experience required
 
-## When are this class's <font color="red">meeting times</font>?
+## When and where are this class's <font color="red">lectures</font>?
+<!-- ## When are this class's <font color="red">meeting times</font>? -->
 
-This is an *online* course. 
+- The **in-person** section meets at **1120 PEC** on **Wednesdays 2:00 PM - 4:45 PM**.
+- Students in the **asynchronous online** section can watch the lecture recordings on Canvas (usually posted shortly after each lecture)
+
+<!-- This is an *online* course. 
 We will *not* meet for lectures. 
 Instead, the pre-recorded lecture videos and other materials will be uploaded on Canvas at the beginning of each week.
-You can watch the lecture videos and study on your own time during each week.
+You can watch the lecture videos and study on your own time during each week. -->
+
 
 ## Who is the <font color="red">instructor</font>?
 
@@ -60,7 +65,7 @@ Please note the instructors may not respond to
 <!-- **Dr. Feng’s office hours** -->
 
 All office hours by Dr. Feng are held on Zoom at <https://umich.zoom.us/my/fredfeng>
-- Wednesdays 3:00 PM - 4:00 PM
+- Mondays 3:00 PM - 4:00 PM
 - Thursdays 3:00 PM - 4:00 PM
 - Occasionally, an office hour may need to be moved to a different time. In this case, a Canvas announcement will be sent. You can also refer to our [Course Calendar](../index.html#calendar) for the up-to-date office hour schedule.
 - If you are not able to attend during the above time, you can email Dr. Feng with a request for an appointment.
@@ -82,7 +87,7 @@ Tip: All the office hours (and other course activities, home deadlines, etc.) ca
 We have our course Canvas page at <https://canvas.umd.umich.edu/courses/534891>, which will be used for
 
 - Announcements (We recommend turning on the email notification or checking it often.)
-- Lecture videos & other learning materials
+- Lecture recordings & other learning materials
 - Homework submissions
 - Project submissions
 - Grades
