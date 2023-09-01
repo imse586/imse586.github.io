@@ -164,7 +164,7 @@ It is recommended to go through the solutions (even briefly) for your study purp
   You can also use the print function to show the answers. 
   The bottom line is we do not have to search for the answers buried in your code or output.
 - You will submit a ZIP file called `imse586-hwX-yourUniqueName.zip`, where `X` is the number of the current homework. 
-  For example, if I were to submit for homework 1, it would be called `imse440-hw1-fredfeng.zip`.
+  For example, if I were to submit for homework 1, it would be called `imse586-hw1-fredfeng.zip`.
 - When we extract your compressed file, the result should be a directory called `imse586-hwX-yourUniqueName`, containing, at a minimum, a Jupyter notebook file called `imse586-hwX-yourUniqueName.ipynb` and all other files (e.g., data files) needed to run your notebook on our machine.
 - In your submission, you need to include all necessary files (including data files, even if you didn’t make any changes to them), so that we can run your code off the bat. We will not supply any files or make any changes before running your code on our machine.
 
