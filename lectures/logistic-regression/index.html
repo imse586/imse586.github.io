@@ -3,6 +3,7 @@
   <head>
     <title>Logistic regression</title>
     <meta charset="utf-8">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
       @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
@@ -63,21 +64,20 @@ df.head()
 
 $$\text{default_binary}=
 \begin{cases}
-    1, & \text{if } \text{default = Yes} \\\
-    0, & \text{if } \text{default = No}
+    1, & \text{if } \text{default = Yes;} \\\
+    0, & \text{if } \text{default = No.}
 \end{cases}
 $$
-
 
 --
 
 ```
-plt.scatter(x='balance', 
-            y='default_binary', 
-            data=df)
+(
+    so.Plot(df, x='balance', y='default_binary')
+    .add(so.Dot())
+)
 ```
 
-<br>
 .center[![:scale 100%](images/default_scatter.png)]
 
 
@@ -87,7 +87,7 @@ plt.scatter(x='balance',
 <!-- <br> -->
 $$p(x)=\frac{e^{\beta_0+\beta_1x}}{1+e^{\beta_0+\beta_1x}}$$
 
-$p(x)$: probability of default given that the balance is $x$. 
+p(x): probability of default given that the balance is x. 
 
 --
 
@@ -108,34 +108,38 @@ p(x)&=\frac{e^{\beta_0+\beta_1x}}{1+e^{\beta_0+\beta_1x}} \\\
 $$
 
 
-The log-odds (or logit) is a linear function of $x$.
+The log-odds (or logit) is a linear function of x.
 
 ---
-# Interpretation of the slope parameter $\beta_1$
+# Interpretation of the slope parameter
 
 $$\frac{p(x)}{1-p(x)}=e^{\beta_0+\beta_1x}$$
 
-When we increase $x$ by $1$, the odds
+When we increase x by 1, the odds
 
 $$
+\small
 \begin{aligned}
-\frac{p(x+1)}{1-p(x+1)}&=e^{\beta_0+\beta_1(x+1)} \\\
-&=e^{\beta_1}e^{\beta_0+\beta_1x} \\\
-&=e^{\beta_1}\frac{p(x)}{1-p(x)}
+\frac{p(x+1)}{1-p(x+1)}=e^{\beta_0+\beta_1(x+1)}
+&=e^{\beta_1}e^{\beta_0+\beta_1x}
+=e^{\beta_1}\frac{p(x)}{1-p(x)}
 \end{aligned}
 $$
 
-increase by a ratio of $e^{\beta_1}$.
+increase by a ratio of 
+
+$$e^{\beta_1}$$
 
 
 ---
-# Interpretation of the slope parameter $\beta_1$
+<!-- # Interpretation of the slope parameter -->
 
 $$\ln{\frac{p(x)}{1-p(x)}}=\beta_0+\beta_1x$$
 
-When we increase $x$ by $1$, the log-odds
+When we increase x by 1, the log-odds
 
 $$
+\small
 \begin{aligned}
 \ln{\frac{p(x+1)}{1-p(x+1)}}&=\beta_0+\beta_1(x+1) \\\
 &=\beta_0+\beta_1x+\beta_1\\\
@@ -143,14 +147,16 @@ $$
 \end{aligned}
 $$
 
-increase by $\beta_1$.
+increase by 
+
+$$\beta_1$$
 
 
 <!-- ------------------------------------------ -->
 
 </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script> -->
 <!-- <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script> -->
