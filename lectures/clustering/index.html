@@ -3,6 +3,7 @@
   <head>
     <title>IMSE 586 Clustering</title>
     <meta charset="utf-8">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
       @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
@@ -135,7 +136,7 @@ Data simplification
 ---
 # .red[Supervised] v.s. .green[unsupervised] learning
 
-.red[Supervised learning]
+.red[Supervised] learning
 - The model is built using labeled data (training data).
 - Examples: regression, classification, neural nets
 
@@ -143,7 +144,7 @@ Data simplification
 
 <br>
 
-.green[Unsupervised learning]
+.green[Unsupervised] learning
 - No training data 
 - The model is built based on commonalities in data.
 - Examples: clustering, anomaly detection, principle component analysis
@@ -151,20 +152,19 @@ Data simplification
 ---
 # Selecting cluster features
 
-Include only features that
-- characterize the objects being clustered
+- Include only features that characterize the objects being clustered
 
 --
 
 <br>
 
-"Irrelevant" features can not be excluded from the analysis once it begins.
+- Irrelevant features can not be excluded from the analysis once it begins.
 
 --
 
 <br>
 
-Selecting features requires domain knowledge.
+- Selecting features requires domain knowledge.
 
 
 ---
@@ -192,11 +192,11 @@ Feature scales can make a big difference in groupings.
 
 Features of varying scales should be standardized before clustering. 
 
-The standard score of a sample $x$ is calculated as
+The standard score of a sample *x* is calculated as
 
 $$z=\frac{x-u}{s}$$
 
-where $u$ is the mean of the samples, and $s$ is the standard deviation of the samples.
+where *u* is the mean of the samples, and *s* is the standard deviation of the samples.
 
 ---
 # Standardizing features
@@ -296,7 +296,9 @@ $$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
 
 --
 
-  - Ways to partition $n$ objects into $k$ clusters: $k^n$
+Ways to partition *n* objects into *k* clusters: 
+  
+$$k^n$$
 
 --
 
@@ -309,7 +311,7 @@ $$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
 
 
 ---
-Step 1. We start by randomly selecting $k$ objects as the initial centroids (often called "seeds")
+Step 1. We start by randomly selecting *k* objects as the initial centroids (often called "seeds")
 
 .center[![:scale 100%](images/kmeans_1.png)]
 
@@ -376,9 +378,9 @@ We've reached the convergence.
 ---
 # *k*-means clustering
 
-To group $n$ objects into $k$ clusters,
+To group *n* objects into *k* clusters,
 
-1. Randomly assign $k$ cluster centroids (i.e., seeds). 
+1. Randomly assign *k* cluster centroids (i.e., seeds). 
 
 2. Iterate until the cluster assignments stop changing:
 
@@ -435,37 +437,37 @@ $$\min\_C \sum\_{i=1}^k \sum_{x \in C\_i}||x-\mu_i||^2$$
 ---
 # The number of clusters $k$
 
-$k$ is a hyperparameter that must be pre-specified. 
+*k* is a hyperparameter that must be pre-specified. 
 
-How to determine the best value of $k$?
+How to determine the best value of *k*?
 
 .center[![:scale 60%](images/elbow.png)]
 
-Select $k$ at the ".red[elbow point]", where "mountain" ends and "rubble" begins.
+Select *k* at the ".red[elbow point]", where "mountain" ends and "rubble" begins.
 
 ---
 # Silhouette analysis
 
 For each object, calculate
-- mean .red[intra]-cluster distance $a$
-- mean .green[nearest]-cluster distance $b$
+- mean .red[intra]-cluster distance *a*
+- mean .green[nearest]-cluster distance *b*
 
 .center[![:scale 65%](images/kmeans_4.png)]
 
 ---
 For each object, calculate
-- mean .red[intra]-cluster distance $a$
-- mean .green[nearest]-cluster distance $b$
+- mean .red[intra]-cluster distance *a*
+- mean .green[nearest]-cluster distance *b*
 
-$b-a$ measures how similar an object is to its own cluster compared to other clusters.
+*b-a* measures how similar an object is to its own cluster compared to other clusters.
 
-We divide it by $\max(a, b)$ to make it between -1 and 1. 
+We divide it by max(*a*, *b*) to make it between -1 and 1. 
 
 $$\text{Silhouette coefficient}=\frac{b-a}{\max(a, b)}$$
 
 Metric: the mean silhouette coefficient over all objects.
 
-We pick a $k$ that gives the highest value of this metric. 
+We pick a *k* that gives the highest value of this metric. 
 
 ???
 
@@ -480,9 +482,9 @@ The best score is 1, and the worse score is −1.
 
 ---
 
-# The number of clusters $k$
+# The number of clusters *k*
 
-Constraints from downstream applications
+*k* may be constrained by downstream applications.
 
 --
 
@@ -497,24 +499,49 @@ Constraints from downstream applications
 .center[![:scale 100%](images/wetsuit.jpg)]
 
 ---
-$k$-means is limited to linear cluster boundaries. 
+*k*-means partitions space into [convex sets](https://en.wikipedia.org/wiki/Convex_set).
 
-.center[![:scale 45%](images/kmeans_nonlinear_1.png)]
+It does not work well with non-convex shapes.
+
+.center[![:scale 40%](images/kmeans_nonlinear_1.png)
+![:scale 40%](images/kmeans_nonlinear_2.png)]
 
 --
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*k*-means clustering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spectral clustering
+.center[Spectral clustering]
 
-.center[![:scale 45%](images/kmeans_nonlinear_2.png)
-![:scale 45%](images/kmeans_nonlinear_3.png)]
+.center[![:scale 40%](images/kmeans_nonlinear_3.png)]
 
+---
+# Spatial clustering
+
+- Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
+
+--
+
+.center[![:scale 60%](images/dbscan.png)]
+
+.center[.gray[[image source](https://commons.wikimedia.org/wiki/File:DBSCAN-Illustration.svg)]]
+
+---
+# Key parameters of DBSCAN
+
+.center[![:scale 45%](images/dbscan.png)]
+
+- *epsilon*: The max distance between two samples for them to be considered as in the same neighborhood.
+- *min_samples*: The # of samples in a neighborhood for a point to be considered as a core point.
+
+---
+class: middle, center
+
+# [Visualizing DBSCAN Clustering](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
 
 ---
 # Further resources
 
 <br>
 
-- [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/) Chapter 10.3 (p385-390)
+- [An Introduction to Statistical Learning: with Applications in Python](https://www.statlearning.com) (Chapter 12.4)
 
 - [Clustering (Wikipedia)](https://en.wikipedia.org/wiki/Cluster_analysis)
 
@@ -524,7 +551,7 @@ $k$-means is limited to linear cluster boundaries.
 
 </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script> -->
 
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
