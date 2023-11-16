@@ -10,7 +10,8 @@
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
       body {font-family: 'Roboto'; font-weight: bold; line-height: 1.4;}
-      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:26px;}
+      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'}
+      /* .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:26px;} */
       .remark-slide-content h1 {font-size: 40px; text-align: center;}
       .remark-slide-content p, .remark-slide-content li {font-size:30px; margin: 20px 0;}
       a:link {text-decoration: none;}
@@ -528,8 +529,8 @@ It does not work well with non-convex shapes.
 
 .center[![:scale 45%](images/dbscan.png)]
 
-- *epsilon*: The max distance between two samples for them to be considered as in the same neighborhood.
-- *min_samples*: The # of samples in a neighborhood for a point to be considered as a core point.
+- `eps`: The max distance between two samples for them to be considered as in the same neighborhood.
+- `min_samples`: The # of samples in a neighborhood for a point to be considered as a core point.
 
 ---
 class: middle, center
