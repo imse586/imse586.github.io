@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<svg width="822" height="355" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" enable-background="new 0 0 622 355" version="1.1" xml:space="preserve">
+ <metadata id="metadata9380">image/svg+xml</metadata>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="Layer_5">
+   <path d="m787,23c0,-8.28 -9.59,-15 -21.4,-15l-549.2,0c-11.81,0 -21.4,6.72 -21.4,15l0,297c0,8.28 9.59,15 21.4,15l549.2,0c11.81,0 21.4,-6.72 21.4,-15l0,-297z" fill="#B5B5B5" id="path9216" stroke="#FFFFFF" stroke-miterlimit="10"/>
+   <rect fill="none" height="28" id="rect9218" width="99.86" x="216.4" y="21"/>
+   <text font-family="&#x27;Consolas&#x27;" font-size="18" id="text9220" transform="matrix(1 0 0 1 0 0) matrix(1.42651 0 0 1.37452 216.398 40.6241)" x="0" y="0">.git</text>
+  </g>
+  <g id="Layer_3">
+   <g id="g9223">
+    <linearGradient id="SVGID_1_" x1="0.5" x2="0.5" y1="0" y2="1">
+     <stop id="stop9226" offset="0.1" stop-color="#C4C4C4"/>
+     <stop id="stop9228" offset="0.53" stop-color="#686868"/>
+     <stop id="stop9230" offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <path d="m299.45,191.22c0,-9.27 22.41,-16.78 50.05,-16.78s50.05,7.52 50.05,16.78l0,1.03c0,0 0,-2.12 0,-3.12c0,-1.01 0,-35.74 0,-35.74l0,0.39c0,-9.27 -22.41,-16.78 -50.05,-16.78s-50.05,7.51 -50.05,16.78l0,-0.39c0,0 0,34.52 0,35.73c0,1.2 0,3.13 0,3.13l0,-1.03z" fill="url(#SVGID_1_)" id="path9232" stroke="#231F20" stroke-miterlimit="10"/>
+    <g id="g9234">
+     <path d="m399.55,153.39c0,0 0,34.73 0,35.74c0,1 0.35,3.12 0.35,3.12c0,9.27 -22.76,16.78 -50.4,16.78s-50.4,-7.51 -50.4,-16.78c0,0 0.35,-1.93 0.35,-3.13c0,-1.21 0,-35.73 0,-35.73c0,9.27 22.41,16.78 50.05,16.78s50.05,-7.51 50.05,-16.78z" fill="#FFFFFF" id="path9236" stroke="#231F20" stroke-miterlimit="10"/>
+    </g>
+   </g>
+   <g id="g9238">
+    <polygon fill="#FFFFFF" id="polygon9240" points="384.718994140625,142.97900390625 325.4110107421875,142.97900390625 312.2349853515625,157.47300720214844 371.5419921875,157.47300720214844 " stroke="#000000" stroke-miterlimit="10"/>
+    <line fill="none" id="line9242" stroke="#70BF41" stroke-width="2" x1="325.41" x2="374.17" y1="148.91" y2="148.91"/>
+   </g>
+  </g>
+  <g id="Layer_4">
+   <linearGradient id="SVGID_2_" x1="0.5" x2="0.5" y1="0" y2="1">
+    <stop id="stop9254" offset="0.1" stop-color="#C4C4C4"/>
+    <stop id="stop9256" offset="0.53" stop-color="#686868"/>
+    <stop id="stop9258" offset="1" stop-color="#000000"/>
+   </linearGradient>
+   <path d="m643.35,171.88c0,-9.26 22.4,-16.78 50.04,-16.78c27.64,0 50.05,7.52 50.05,16.78l0,1.03c0,0 0,-2.11 0,-3.12s0,-35.74 0,-35.74l0,0.39c0,-9.27 -22.41,-16.78 -50.05,-16.78c-27.64,0 -50.04,7.52 -50.04,16.78l0,-0.39c0,0 0,34.52 0,35.73s0,3.13 0,3.13l0,-1.03z" fill="url(#SVGID_2_)" id="path9260" stroke="#231F20" stroke-miterlimit="10"/>
+   <g id="g9262">
+    <path d="m743.24,211.28c0,0 0,34.74 0,35.74s0.35,3.12 0.35,3.12c0,9.27 -22.76,16.78 -50.4,16.78c-27.64,0 -50.4,-7.51 -50.4,-16.78c0,0 0.35,-1.92 0.35,-3.13s0,-35.73 0,-35.73c0,9.27 22.41,16.78 50.05,16.78c27.64,0 50.05,-7.51 50.05,-16.78z" fill="#FFFFFF" id="path9264" stroke="#231F20" stroke-miterlimit="10"/>
+   </g>
+   <g id="g9266">
+    <path d="m743.24,172.6c0,0 0,34.74 0,35.74s0.35,3.12 0.35,3.12c0,9.27 -22.76,16.78 -50.4,16.78c-27.64,0 -50.4,-7.51 -50.4,-16.78c0,0 0.35,-1.92 0.35,-3.13s0,-35.73 0,-35.73c0,9.27 22.41,16.78 50.05,16.78c27.64,0 50.05,-7.51 50.05,-16.78z" fill="#FFFFFF" id="path9268" stroke="#231F20" stroke-miterlimit="10"/>
+   </g>
+   <g id="g9270">
+    <path d="m743.24,133.63c0,0 0,34.73 0,35.74c0,1 0.35,3.12 0.35,3.12c0,9.27 -22.76,16.78 -50.4,16.78c-27.64,0 -50.4,-7.52 -50.4,-16.78c0,0 0.35,-1.93 0.35,-3.13s0,-35.73 0,-35.73c0,9.27 22.41,16.78 50.05,16.78c27.64,0 50.05,-7.51 50.05,-16.78z" fill="#FFFFFF" id="path9272" stroke="#231F20" stroke-miterlimit="10"/>
+   </g>
+   <g id="g9282">
+    <polygon fill="#FFFFFF" id="polygon9284" points="728.7750244140625,125 669.468017578125,125 656.2919921875,139.49400329589844 715.5989990234375,139.49400329589844 " stroke="#000000" stroke-miterlimit="10"/>
+    <line fill="none" id="line9286" stroke="#70BF41" stroke-width="2" x1="669.47" x2="718.22" y1="130.93" y2="130.93"/>
+   </g>
+  </g>
+  <g id="Layer_1">git commit -m &quot;Fix plot A&quot;</g>
+  <rect fill="none" height="14" id="rect9364" width="85.54" x="395.2" y="183.07"/>
+  <g id="g9403">
+   <g id="g9358">
+    <rect fill="#45beee" height="30.09" id="rect9360" width="190.19" x="415.47" y="172.52">git commit -m &quot;Fix plo A&quot;</rect>
+    <polygon fill="#45beee" id="polygon9362" points="633.614013671875,186.6708221435547 601.5096447031174,157.5709991455078 601.5096447031174,216.69500732421875 "/>
+   </g>
+   <text font-family="Monospace" font-size="12" font-weight="bold" id="text9366" x="419.98" y="189.35">git commit -m &quot;Update emails&quot;</text>
+  </g>
+  <rect fill="none" height="17" id="rect9368" width="147" x="257" y="235.01"/>
+  <text font-family="Helvetica" font-size="19" id="text9370" x="292.48" y="248.64">staging area</text>
+  <rect fill="none" height="17" id="rect9372" width="147" x="475" y="306"/>
+  <text font-family="Helvetica" font-size="19" id="text9374" x="655.16" y="293.63">repository</text>
+  <g id="g9443">
+   <g id="g9445" transform="matrix(0.94607 0.0020075 -0.00189924 0.999998 7.48877 -0.436116)">
+    <rect fill="#45beee" height="30.6" id="rect9447" width="116.04" x="135" y="124.77"/>
+    <polygon fill="#45beee" id="polygon9449" points="246.63990912641384,109.57190963439643 246.63990912641384,169.69591781310737 299.76693854535915,139.16390487365425 " transform="matrix(1 0 0 1 0 0)"/>
+   </g>
+   <text font-family="Courier New" font-size="12px" font-weight="bold" id="text9451" x="142.13" y="144.32">git add file-1.txt</text>
+  </g>
+  <g id="svg_1">
+   <g id="svg_2">
+    <rect fill="#DCDEE0" height="128" id="svg_3" width="100" x="27.32" y="37.5"/>
+    <rect fill="none" height="128" id="svg_4" stroke="#85888D" stroke-width="2" width="100" x="27.32" y="37.5"/>
+    <line fill="none" id="svg_5" stroke="#000000" stroke-width="2" x1="40.32" x2="114.32" y1="57.5" y2="57.5"/>
+    <line fill="none" id="svg_6" stroke="#000000" stroke-width="2" x1="40.32" x2="114.32" y1="63.5" y2="63.5"/>
+    <line fill="none" id="svg_7" stroke="#000000" stroke-width="2" x1="40.32" x2="114.32" y1="69.5" y2="69.5"/>
+    <line fill="none" id="svg_8" stroke="#70BF41" stroke-width="2" x1="40.32" x2="114.32" y1="81.5" y2="81.5"/>
+   </g>
+   <rect fill="none" height="14" id="svg_9" width="92.74" x="38.95" y="146.5"/>
+   <text font-family="Monospace" font-size="12" id="svg_10" transform="matrix(1 0 0 1 44.3105 144.28)" x="-2.68" y="7.5">file-1.txt</text>
+   <g id="svg_11">
+    <rect fill="#DCDEE0" height="128" id="svg_12" width="100" x="26.32" y="202.5"/>
+    <rect fill="none" height="128" id="svg_13" stroke="#85888D" stroke-width="2" width="100" x="26.32" y="202.5"/>
+    <line fill="none" id="svg_14" stroke="#000000" stroke-width="2" x1="39.32" x2="113.32" y1="222.5" y2="222.5"/>
+    <line fill="none" id="svg_15" stroke="#000000" stroke-width="2" x1="39.32" x2="113.32" y1="228.5" y2="228.5"/>
+    <line fill="none" id="svg_16" stroke="#000000" stroke-width="2" x1="39.32" x2="113.32" y1="234.5" y2="234.5"/>
+    <line fill="none" id="svg_17" stroke="#000000" stroke-width="2" x1="39.32" x2="113.32" y1="264.01" y2="264.01"/>
+    <line fill="none" id="svg_18" stroke="#000000" stroke-width="2" x1="39.32" x2="113.32" y1="270.01" y2="270.01"/>
+    <line fill="none" id="svg_19" stroke="#000000" stroke-width="2" x1="39.32" x2="113.32" y1="276.01" y2="276.01"/>
+    <line fill="none" id="svg_20" stroke="#B285BC" stroke-width="2" x1="39.32" x2="113.32" y1="246.5" y2="246.5"/>
+    <line fill="none" id="svg_21" stroke="#B285BC" stroke-width="2" x1="39.32" x2="113.32" y1="252.5" y2="252.5"/>
+    <rect fill="none" height="14" id="svg_22" width="92.74" x="29.95" y="316.5"/>
+    <text font-family="Monospace" font-size="12" id="svg_23" transform="matrix(1 0 0 1 44.3105 325.28)" x="-2.68" y="-3.5">file-2.txt</text>
+   </g>
+  </g>
+ </g>
+</svg>

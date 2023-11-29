@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to Git & GitHub</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {font-family: 'Roboto'; font-weight: bold; line-height: 1.4; }
+      .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono'; font-size:24px}
+      .remark-slide-content h1 {font-size: 40px; text-align: center;}
+      .remark-slide-content p, .remark-slide-content li {font-size:30px; margin: 20px 0;}
+      a:link {text-decoration: none;}
+      img{max-height: 100%;}
+      .quote_author {display: block; text-align: right;}
+      .tiny {font-size: 20px;}
+      .red {color:red;}
+      .green {color:green;}
+      .blue {color:blue;}
+      .gray {color:gray}
+      .lightgray {color:lightgray}
+    </style>
+  </head>
+  <body>
+
+<textarea id="source">
+
+class: center, middle
+
+
+# Introduction to 
+
+.center[![:scale 30%](./images/Git-Logo-2Color.png) ]
+
+.center[![:scale 30%](./images/GitHub_Logo.png)]
+
+
+---
+class: middle, center
+
+![:scale 56%](./images/phd101212s.gif)
+
+
+.tiny[.lightgray[“Piled Higher and Deeper” by Jorge Cham]]
+
+<!-- ---
+# What is Git?
+
+.center[![:scale 50%](./images/Git-Logo-2Color.png)]
+
+<br>
+
+Git is a free & open source version control system.
+
+<br>
+
+.center[[Official website](https://git-scm.com/)] -->
+
+---
+class: middle, center
+
+![:scale 100%](./images/git-branch.svg)
+
+
+---
+class: middle, center
+
+
+# One-time configurations
+
+---
+
+### User name
+
+Set a name that is identifiable for credit when review version history.
+
+```
+$ git config --global user.name "Fred Feng"
+```
+
+--
+
+### User email
+
+Set an email address that will be associated with each history marker.
+
+```
+$ git config --global user.email "fredfeng@umich.edu"
+```
+
+
+---
+# Line endings
+
+### On macOS and Linux:
+
+```
+$ git config --global core.autocrlf input
+```
+
+<br>
+
+### On Windows:
+
+```
+git config --global core.autocrlf true
+```
+
+
+---
+
+### Default Branch name
+
+```
+$ git config --global init.defaultBranch main
+```
+
+--
+
+
+### View the configurations
+
+```
+$ git config --list
+```
+
+
+---
+
+# cd into your directory
+
+
+To check if you are there, print the working directory
+
+```
+$ pwd
+```
+
+<br>
+
+Or you can list the files in the current directory
+
+```
+$ ls
+```
+
+---
+# Show the status of the git repository
+
+```
+$ git status
+```
+
+At this point, we will see an error message. 
+This is because the directory is not a git repository yet.
+
+---
+# Initialize a new Git repository
+
+```
+$ git init
+```
+
+
+---
+# Show the status of the git repository
+
+```
+$ git status
+```
+
+- Show modified files in working directory, staged for your next commit. 
+
+
+---
+# Under the hood
+
+Git stores all project info inside a hidden .red[.git] folder
+
+List all files
+
+```
+$ ls -a
+```
+
+<br>
+
+List the files inside the .red[.git] folder
+
+```
+$ ls .git
+```
+
+
+---
+
+# Staging area
+
+An intermediate area where a subset of the modified files can be grouped for a commit.
+
+.center[![:scale 90%](./images/git-committing.svg)]
+
+It helps to split up unrelated changes in your working directory into multiple, more meaningful commits.
+
+---
+# Add files to the staging area
+
+```
+$ git add [file_1] [file_2]
+```
+
+Add the files (as they look now) to the staging area for your next commit.
+
+- Each commit should be a logical unit of change.
+
+
+
+<!-- <br>
+
+```
+$ git add .
+```
+
+Add all files in working directory to the staging area. -->
+
+
+---
+# Commit (i.g., take a snapshot of) the changes from the staged files
+
+
+
+```
+$ git commit -m "Some meaningful commit message"
+```
+
+
+
+---
+Let's create some initial files.
+
+- `analysis.py`
+- `notes.md`
+- `/figures`
+
+---
+# Commit the changes
+
+```
+$ git status
+```
+
+```
+$ git add [file_1] [file_2]
+```
+
+```
+$ git status
+```
+
+```
+$ git commit -m "Initial commit"
+```
+
+```
+git status
+```
+
+---
+class: middle, center 
+
+# Tracking changes
+
+
+---
+# Make some changes
+
+Lets make some changes to the plot and add a line to the notes.
+
+---
+# Commit the new changes
+
+```
+$ git status
+```
+
+```
+$ git diff
+```
+
+```
+$ git add [file_1] [file_2]
+```
+
+```
+$ git commit -m "Add information on points"
+```
+
+```
+$ git status
+```
+
+---
+# Exercise
+
+Follow the previous examples to 
+
+- make some additional changes to the plot
+- add some notes
+- commit the above change
+- check the commit log
+
+
+---
+
+<!-- # Question -->
+
+Which of the following commit messages would be most appropriate for a commit?
+
+1. "Changes"
+1. "Added line 'Continents are grouped by color.' to notes.txt"
+1. "Describe grouping"
+
+
+---
+class: middle, center
+
+
+![:scale 100%](./images/git_commit_2x.png)
+
+<br>
+
+.lightgray[Source: https://xkcd.com/1296/]
+
+
+---
+
+# Show the commit logs
+
+```
+$ git log
+```
+
+```
+$ git log -5
+```
+
+```
+$ git log --oneline
+```
+
+
+
+---
+class: middle, center
+
+# Intro to GitHub
+
+---
+
+- Open the GitHub website and sign in
+- Create a new repository
+  - Do not check the box to add a README file
+- Copy the URL that ends with .red[.git]
+- Add this GitHub repo we just created as a "remote" for our local git repo.
+
+```
+$ git remote add [alias] [url]
+```
+
+By convention the GitHub repo is often named .red[origin].
+
+```
+$ git remote add origin https://github.com/x/abc.git
+```
+
+
+---
+
+```
+$ git clone [url]
+```
+
+```
+$ git push origin main
+```
+
+```
+$ git pull origin main
+```
+
+
+<!-- ---
+
+Set global file patterns to ignore
+
+It's a better practice as "each developer deals with his os specific files in his own .global_ignore, that way the project .gitignore is project specific."
+
+Create a `.gitignore_global` file at `~/.gitignore_global`
+
+Then do
+
+```
+git config --global core.excludesfile ~/.gitignore_global
+``` -->
+
+
+<!-- ------------------------------------------ -->
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<script>
+remark.macros.scale = function (percentage) {
+  var url = this;
+  return '<img src="' + url + '" style="width: ' + percentage + '" />';
+};
+
+var slideshow = remark.create({
+  countIncrementalSlides: false,
+  highlightLanguage: 'python',
+  highlightStyle: 'tomorrow-night-bright', 
+  highlightSpans: true,
+  highlightLines: false,
+});
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          inlineMath: [['$','$'], ['\\(','\\)']]
+          }
+      });
+
+      MathJax.Hub.Configured();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.7/mermaid.min.js"></script>
+<link rel="stylesheet" href="./mermaid.css">
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+</body>
+</html>
