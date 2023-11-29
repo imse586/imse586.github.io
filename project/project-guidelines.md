@@ -28,11 +28,11 @@ However, they should only serve as supplementary components of your project.
 
 - **October 30 (Monday) at 6:11 PM**: Project proposal (team)
 - **November 27 (Monday) at 6:11 PM**: Progress report (team)
-- **December 8 (Friday) at 6:11 PM**
+- **December 11 (Monday) at 6:11 PM**
     - Video presentation (team)
     - Project poster (team)
     - Jupyter notebook and data (team)
-- **December 11 (Monday) at 6:11 PM**
+- **December 12 (Tuesday) at 6:11 PM**
     - Peer evaluation form (individual)
 
 ---
