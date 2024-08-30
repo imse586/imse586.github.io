@@ -1,7 +1,7 @@
 <h2 style="text-align: center;"><a href="../">IMSE 586: Big Data Analytics and Visualization</a></h2>
 
 
-<h3 style="text-align: center;">Fall 2023 - 3 Credit Hours</h3>
+<h3 style="text-align: center;">Fall 2024 - 3 Credit Hours</h3>
 
 <br>
 
@@ -16,9 +16,14 @@ An *introductory*, *technical*, and *hands-on* course on big data analytics and 
 ## When and where are this class's <font color="red">lectures</font>?
 <!-- ## When are this class's <font color="red">meeting times</font>? -->
 
-- The **in-person** section meets at **1120 PEC** on **Wednesdays 2:00 PM - 4:45 PM**.
-- Students in the **asynchronous online** section can watch the lecture recordings on Canvas (usually posted shortly after each lecture)
+<!-- - The **in-person** section meets at **1120 PEC** on **Wednesdays 2:00 PM - 4:45 PM**. 
+- Students in the **asynchronous online** section can watch the lecture recordings on Canvas (usually posted shortly after each lecture) -->
 
+**Both** sections can watch the lecture recordings on Canvas, posted every **Tuesday** at **2:00 PM**. We will *not* meet for lectures. 
+Instead, the pre-recorded lecture videos and other materials will be uploaded on Canvas at the beginning of each week.
+- The **hybrid - mostly online** section meets two times on campus during the semester. First time to discuss the project proposal, and the second time to present the final project. Time and location will be shared throughout the semester.
+- The **online - asynchronous** section will be fully online.
+  
 <!-- This is an *online* course. 
 We will *not* meet for lectures. 
 Instead, the pre-recorded lecture videos and other materials will be uploaded on Canvas at the beginning of each week.
@@ -27,13 +32,13 @@ You can watch the lecture videos and study on your own time during each week. --
 
 ## Who is the <font color="red">instructor</font>?
 
-[Dr. Fred Feng](http://www.umich.edu/~fredfeng/) ("Fred" is fine)
+<!-- [Dr. Fred Feng](http://www.umich.edu/~fredfeng/) ("Fred" is fine) -->
 
 <!-- ## Who is the <font color="red">GSI</font>? -->
 
-<!-- Rayane Moustafa (<rayanem@umich.edu>)
+Rayane Moustafa (<rayanem@umich.edu>)
 
-The GSI's office hours are held on Zoom at <https://umich.zoom.us/my/rayanemoustafa>
+<!-- The GSI's office hours are held on Zoom at <https://umich.zoom.us/my/rayanemoustafa>
 
 - Thursdays 11:00 AM - noon
 - Fridays 11:00 AM - noon -->
@@ -47,14 +52,14 @@ The GSI's office hours are held on Zoom at <https://umich.zoom.us/my/rayanemoust
 
 
 **Email rules**
-- <imse586instructors@umich.edu> This is the email address that you should use to help me keep my inbox organized.
+- You should email the instructor at <rayanem@umich.edu> <!-- This is the email address that you should use to help me keep my inbox organized -->.
  <!-- for most questions (e.g., homework and project).  -->
 <!-- Your email will be directed to all the instructors (i.e., Dr. Feng and the GSI) which may provide you with a faster response. -->
 <!-- - If you prefer to talk to Dr. Feng individually, send email to <fredfeng@umich.edu> -->
 - You should include the course number **IMSE 586** at the beginning of the subject line, followed by a brief description with a few words. For example: **IMSE 586 - homework 1 doubts**
 - Use your UMICH email (i.e., rather than your personal or other email addresses) when contacting us
 
-Please note the instructors may not respond to
+Please note the instructor may not respond to
 - Emails that do not comply with the rules above
 - Canvas messages
 - Canvas comments under an assignment.
@@ -64,11 +69,14 @@ Please note the instructors may not respond to
 
 <!-- **Dr. Feng’s office hours** -->
 
-All office hours by Dr. Feng are held on Zoom at <https://umich.zoom.us/my/fredfeng>
-- Mondays 3:00 PM - 4:00 PM
-- Thursdays 3:00 PM - 4:00 PM
-- Occasionally, an office hour may need to be moved to a different time. In this case, a Canvas announcement will be sent. You can also refer to our [Course Calendar](../index.html#calendar) for the up-to-date office hour schedule.
-- If you are not able to attend during the above time, you can email Dr. Feng with a request for an appointment.
+All office hours <!-- by Dr. Feng --> are held on Zoom at <https://umich.zoom.us/my/rayanemoustafa> <!-- <https://umich.zoom.us/my/fredfeng> -->
+<!-- - Wednesdays 3:00 PM - 4:00 PM
+- Fridays 3:00 PM - 4:00 PM -->
+  
+- Mondays 1:00 PM - 2:00 PM
+- Thursdays 1:00 PM - 2:00 PM
+- Occasionally, an office hour may need to be moved to a different time. In this case, a Canvas announcement will be sent. <!-- You can also refer to our [Course Calendar](../index.html#calendar) for the up-to-date office hour schedule. -->
+- If you are not able to attend during the above times, you can email me with a request for an appointment.
 
 <!-- **GSI’s office hours**
 
@@ -84,7 +92,7 @@ Tip: All the office hours (and other course activities, home deadlines, etc.) ca
 
 ## What is Canvas used for?
 
-We have our course Canvas page at <https://canvas.umd.umich.edu/courses/534891>, which will be used for
+We have our course Canvas page at <https://canvas.umd.umich.edu/courses/541321>, which will be used for
 
 - Announcements (We recommend turning on the email notification or checking it often.)
 - Lecture recordings & other learning materials
@@ -164,7 +172,7 @@ It is recommended to go through the solutions (even briefly) for your study purp
   You can also use the print function to show the answers. 
   The bottom line is we do not have to search for the answers buried in your code or output.
 - You will submit a ZIP file called `imse586-hwX-yourUniqueName.zip`, where `X` is the number of the current homework. 
-  For example, if I were to submit for homework 1, it would be called `imse586-hw1-fredfeng.zip`.
+  For example, if I were to submit for homework 1, it would be called `imse586-hw1-rayanem.zip`.
 - When we extract your compressed file, the result should be a directory called `imse586-hwX-yourUniqueName`, containing, at a minimum, a Jupyter notebook file called `imse586-hwX-yourUniqueName.ipynb` and all other files (e.g., data files) needed to run your notebook on our machine.
 - In your submission, you need to include all necessary files (including data files, even if you didn’t make any changes to them), so that we can run your code off the bat. We will not supply any files or make any changes before running your code on our machine.
 
@@ -182,7 +190,7 @@ It is recommended to go through the solutions (even briefly) for your study purp
 
 **Homework regrading policies**
 
-- Regrade requests for homework must be made within ten (10) academic calendar days of when the assignment is returned and must be submitted to Dr. Feng in writing (email).
+- Regrade requests for homework must be made within ten (10) academic calendar days of when the assignment is returned and must be submitted to <! --Dr. Feng --> Rayane in writing (email).
 - The entire problem, not just the disputed parts, may be reviewed. Thus, it is possible to receive a lower grade than before.
 - There will be no regrading nor any grade changes after the last week of class.
 
@@ -235,7 +243,7 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
 
 - All course work (e.g., homework, project) must represent your own work.
 - You are *not* allowed to send or receive any course related materials (e.g., lecture notes, Jupyter notebooks, homework files) to or from another student. 
-  Contact the instructors if you are unable to access any course materials. 
+  Contact the instructor if you are unable to access any course materials. 
 - **Avoiding plagiarism**: You are not allowed to submit, as your own, work that is not the result of *your own labor and thoughts*. 
   - All your submitted work that includes material derived in any way from another person or source (including online sources and generative AI such as Chat GPT or U-M GPT), either by direct quotation, paraphrasing, or modification, should be fully and properly cited. 
   <!-- - To avoid plagiarism, you should cite all sources of both ideas and direct quotations, including those found on the internet.  -->
