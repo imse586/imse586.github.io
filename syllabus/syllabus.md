@@ -190,7 +190,7 @@ It is recommended to go through the solutions (even briefly) for your study purp
 
 **Homework regrading policies**
 
-- Regrade requests for homework must be made within ten (10) academic calendar days of when the assignment is returned and must be submitted to <! --Dr. Feng --> Rayane in writing (email).
+- Regrade requests for homework must be made within ten (10) academic calendar days of when the assignment is returned and must be submitted to <!-- Dr. Feng --> Rayane in writing (email).
 - The entire problem, not just the disputed parts, may be reviewed. Thus, it is possible to receive a lower grade than before.
 - There will be no regrading nor any grade changes after the last week of class.
 
