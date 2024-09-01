@@ -26,8 +26,9 @@ However, they should only serve as supplementary components of your project.
 
 ## Important deadlines
 
-- **October 30 (Monday) at 6:11 PM**: Project proposal (team)
-- **November 27 (Monday) at 6:11 PM**: Progress report (team)
+<!-- - **October 30 (Monday) at 6:11 PM**: Project proposal (team) -->
+- **October 29 (Tuesday) at 11:59 PM**: Project proposal (team)         <!-- - **November 27 (Monday) at 6:11 PM**: Progress report (team) -->
+- **November 28 (Thursday) at 11:59 PM**: Progress report (team)
 - **December 11 (Monday) at 6:11 PM**
     - Video presentation (team)
     - Project poster (team)
