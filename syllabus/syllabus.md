@@ -57,7 +57,8 @@ Rayane Moustafa (<rayanem@umich.edu>)
 <!-- Your email will be directed to all the instructors (i.e., Dr. Feng and the GSI) which may provide you with a faster response. -->
 <!-- - If you prefer to talk to Dr. Feng individually, send email to <fredfeng@umich.edu> -->
 - You should include the course number **IMSE 586** at the beginning of the subject line, followed by a brief description with a few words. For example: **IMSE 586 - homework 1 doubts**
-- Use your UMICH email (i.e., rather than your personal or other email addresses) when contacting us
+- Use your UMICH email (i.e., rather than your personal or other email addresses) when contacting me
+- Please ensure that you send your inquiries before 5:00 PM to guarantee a response from me. Please note that emails received after 5:00 PM may not be answered until the following business day.
 
 Please note the instructor may not respond to
 - Emails that do not comply with the rules above
