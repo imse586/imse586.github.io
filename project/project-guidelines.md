@@ -29,11 +29,13 @@ However, they should only serve as supplementary components of your project.
 <!-- - **October 30 (Monday) at 6:11 PM**: Project proposal (team) -->
 - **October 29 (Tuesday) at 11:59 PM**: Project proposal (team)         <!-- - **November 27 (Monday) at 6:11 PM**: Progress report (team) -->
 - **November 28 (Thursday) at 11:59 PM**: Progress report (team)
-- **December 11 (Monday) at 6:11 PM**
+- **December 12 (Thursday) at 11:59 PM**
     - Video presentation (team)
     - Project poster (team)
     - Jupyter notebook and data (team)
-- **December 12 (Tuesday) at 6:11 PM**
+- **December 13 (Friday)**
+    - Presentation on campus for the hybrid section only. Location and time TBA.
+- **December 16 (Monday) at 11:59 PM**
     - Peer evaluation form (individual)
 
 ---
