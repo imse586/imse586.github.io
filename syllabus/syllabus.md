@@ -19,7 +19,7 @@ An *introductory*, *technical*, and *hands-on* course on big data analytics and 
 <!-- - The **in-person** section meets at **1120 PEC** on **Wednesdays 2:00 PM - 4:45 PM**. 
 - Students in the **asynchronous online** section can watch the lecture recordings on Canvas (usually posted shortly after each lecture) -->
 
-**Both** sections can watch the lecture recordings on Canvas, posted every **Tuesday** at **2:00 PM**. We will *not* meet for lectures. 
+**Both** sections can watch the lecture recordings on Canvas, posted every **Tuesday** at **9:00 AM**. We will *not* meet for lectures. 
 Instead, the pre-recorded lecture videos and other materials will be uploaded on Canvas at the beginning of each week.
 - The **hybrid - mostly online** section meets two times on campus during the semester. First time to discuss the project proposal, and the second time to present the final project. Time and location will be shared throughout the semester.
 - The **online - asynchronous** section will be fully online.
