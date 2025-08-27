@@ -1,7 +1,7 @@
 <h2 style="text-align: center;"><a href="../">IMSE 586: Big Data Analytics and Visualization</a></h2>
 
 
-<h3 style="text-align: center;">Fall 2023 - 3 Credit Hours</h3>
+<h3 style="text-align: center;">Fall 2025 - 3 Credit Hours</h3>
 
 <br>
 
@@ -14,16 +14,9 @@ An *introductory*, *technical*, and *hands-on* course on big data analytics and 
 - No prior programming experience required
 
 ## When and where are this class's <font color="red">lectures</font>?
-<!-- ## When are this class's <font color="red">meeting times</font>? -->
 
-- The **in-person** section meets at **1120 PEC** on **Wednesdays 2:00 PM - 4:45 PM**.
+- The **in-person** section meets at **1330 PEC** on **Wednesdays 2:00 PM - 4:45 PM**.
 - Students in the **asynchronous online** section can watch the lecture recordings on Canvas (usually posted shortly after each lecture)
-
-<!-- This is an *online* course. 
-We will *not* meet for lectures. 
-Instead, the pre-recorded lecture videos and other materials will be uploaded on Canvas at the beginning of each week.
-You can watch the lecture videos and study on your own time during each week. -->
-
 
 ## Who is the <font color="red">instructor</font>?
 
@@ -43,29 +36,22 @@ The GSI's office hours are held on Zoom at <https://umich.zoom.us/my/rayanemoust
 
 ## How can I contact the instructor?
 
-**Email** is the preferred way to contact the instructor.
-
+**Emailing** <imse586instructors@umich.edu> is the preferred way to contact the instructor.
 
 **Email rules**
-- <imse586instructors@umich.edu> This is the email address that you should use to help me keep my inbox organized.
- <!-- for most questions (e.g., homework and project).  -->
-<!-- Your email will be directed to all the instructors (i.e., Dr. Feng and the GSI) which may provide you with a faster response. -->
-<!-- - If you prefer to talk to Dr. Feng individually, send email to <fredfeng@umich.edu> -->
+- Use your UMICH email
 - You should include the course number **IMSE 586** at the beginning of the subject line, followed by a brief description with a few words. For example: **IMSE 586 - homework 1 doubts**
-- Use your UMICH email (i.e., rather than your personal or other email addresses) when contacting us
 
 Please note the instructors may not respond to
 - Emails that do not comply with the rules above
 - Canvas messages
-- Canvas comments under an assignment.
+- Canvas comments under an assignment
 
 
 ## When are the <font color="red">office hours</font>?
 
-<!-- **Dr. Feng’s office hours** -->
-
 All office hours by Dr. Feng are held on Zoom at <https://umich.zoom.us/my/fredfeng>
-- Mondays 3:00 PM - 4:00 PM
+- Mondays 9:30 AM - 10:30 AM
 - Thursdays 3:00 PM - 4:00 PM
 - Occasionally, an office hour may need to be moved to a different time. In this case, a Canvas announcement will be sent. You can also refer to our [Course Calendar](../index.html#calendar) for the up-to-date office hour schedule.
 - If you are not able to attend during the above time, you can email Dr. Feng with a request for an appointment.
@@ -84,13 +70,18 @@ Tip: All the office hours (and other course activities, home deadlines, etc.) ca
 
 ## What is Canvas used for?
 
-We have our course Canvas page at <https://canvas.umd.umich.edu/courses/534891>, which will be used for
+Canvas is used for
 
-- Announcements (We recommend turning on the email notification or checking it often.)
+- Announcements
 - Lecture recordings & other learning materials
 - Homework submissions
 - Project submissions
 - Grades
+
+Canvas is *not* used for
+
+- Messaging the instructor
+- Asking assignment-related questions
 
 ## What is this course about?
 
@@ -112,10 +103,7 @@ There is no official textbook. Below is a list of reference books.
 
 **Technical reference books**
 
-- *An Introduction to Statistical Learning: with Applications in Python*, 1st edition, James, Witten, Hastie, & Tibshirani, Springer, 2023, PDF freely available at <https://www.statlearning.com>
-
-<!-- - [*Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and The Cloud*](https://www.pearson.com/us/higher-education/program/Deitel-Intro-to-Python-for-Computer-Science-and-Data-Science-Learning-to-Program-with-AI-Big-Data-and-The-Cloud/PGM2392788.html), Deitel & Deitel, Pearson, 2019 -->
-
+- *An Introduction to Statistical Learning: with Applications in Python*, James, Witten, Hastie, & Tibshirani, Springer, 2023, PDF freely available at <https://www.statlearning.com>
 
 **Non-technical reference books** (in no particular order)
 
@@ -132,7 +120,7 @@ You will need access to a computer that
 
 ## What are the <font color="red">homework</font> policies and formats?
 
-There will be roughly weekly homework for a total of ten (10) homework assignments.
+There will be roughly weekly homework for a total of eleven homework assignments.
 You can find the homework schedule on the [Course Calendar](../index.html#calendar).
 
 **Homework policies**
@@ -240,11 +228,15 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
   - All your submitted work that includes material derived in any way from another person or source (including online sources and generative AI such as Chat GPT or U-M GPT), either by direct quotation, paraphrasing, or modification, should be fully and properly cited. 
   <!-- - To avoid plagiarism, you should cite all sources of both ideas and direct quotations, including those found on the internet.  -->
   - The citation should provide enough information so that the original source of the material can be located.
-- If you have any questions about whether something is or is not allowed, ask the instructor *beforehand*.
+- **Generative AI policies**
+    - **The use of generative AI tools, such as ChatGPT, UM-GPT,  and other similar technologies in this class (e.g., for homework or project) are explicitly forbidden**. 
+    - We believe this is key for this course because we want you to actively and critically engage with the learning material we'll be using, including learning how to use data analytics and visualization to solve engineering problems without the aid of AI technologies. Artificial Intelligence cannot do this learning for you.
+- **All violations will be penalized and reported to the University's Academic Integrity Board (AIB) *with no exceptions*.**
+- If you are uncertain if something is allowed or not, ask the instructor *beforehand*.
 
 **Homework rules**
 
-- All the General course rules above.
+- All the general course rules listed above.
 - You are allowed to consult with other students in the current class during the conceptualization of a problem. However, all written work, whether in scrap or final form, are to be generated by you working alone.
 - You are required to disclose in each homework any person that you have discussed the homework with.
 - You are *not* allowed to possess, look at, use, or in any way derive advantage from another student's work or the solutions prepared in prior semesters, whether the solutions were former students' work or copies of solutions that were made available by the instructors. 
@@ -257,7 +249,7 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
 
 **Project rules**
 
-- All the General course rules above.
+- All the general course rules above.
 - You are *not* allowed to receive any help on the project from another person other than the course instructors.
 - The essence of all work that you submit for your project must be your own. 
   - You are allowed to use code snippets (defined as no more than a few lines of re-usable code) from the internet or elsewhere. However, the snippet must not constitute the core part of your work. 

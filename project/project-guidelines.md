@@ -26,14 +26,10 @@ However, they should only serve as supplementary components of your project.
 
 ## Important deadlines
 
-- **October 30 (Monday) at 6:11 PM**: Project proposal (team)
-- **November 27 (Monday) at 6:11 PM**: Progress report (team)
-- **December 11 (Monday) at 6:11 PM**
-    - Video presentation (team)
-    - Project poster (team)
-    - Jupyter notebook and data (team)
-- **December 12 (Tuesday) at 6:11 PM**
-    - Peer evaluation form (individual)
+- **October 27 (Monday) at 6:11 PM**: Project proposal (team)
+- **November 17 (Monday) at 6:11 PM**: Progress report (team)
+- **December 8 (Monday) at 6:11 PM**: Project final submissions (team)
+- **December 9 (Tuesday) at 6:11 PM**:Peer evaluation form (individual)
 
 ---
 
@@ -312,7 +308,6 @@ You can use any data sets of your interest. Below are some good starting places 
 - <https://www.data.gov>
 - <https://data.detroitmi.gov>
 - <https://archive.ics.uci.edu/ml/index.php>
-- <http://www.kaggle.com>
 - Google search "open data portal" + some keywords of your interest.
 [Click here](https://www.google.com/search?q=%22open+data+portal%22+bicycle) for an example.
 
