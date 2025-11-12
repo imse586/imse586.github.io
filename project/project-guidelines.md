@@ -27,7 +27,7 @@ However, they should only serve as supplementary components of your project.
 ## Important deadlines
 
 - **October 27 (Monday) at 6:11 PM**: Project proposal (team)
-- **November 17 (Monday) at 6:11 PM**: Progress report (team)
+- **November 21 (Friday) at 6:11 PM**: Progress report (team)
 - **December 8 (Monday) at 6:11 PM**: Project final submissions (team)
 - **December 9 (Tuesday) at 6:11 PM**:Peer evaluation form (individual)
 
