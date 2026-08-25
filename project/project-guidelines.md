@@ -26,10 +26,10 @@ However, they should only serve as supplementary components of your project.
 
 ## Important deadlines
 
-- **October 27 (Monday) at 6:11 PM**: Project proposal (team)
-- **November 21 (Friday) at 6:11 PM**: Progress report (team)
-- **December 8 (Monday) at 6:11 PM**: Project final submissions (team)
-- **December 9 (Tuesday) at 6:11 PM**:Peer evaluation form (individual)
+- **October 26 (Monday) at 6:11 PM**: Project proposal (team)
+- **November 20 (Friday) at 6:11 PM**: Progress report (team)
+- **December 7 (Monday) at 6:11 PM**: Project final submissions (team)
+- **December 8 (Tuesday) at 6:11 PM**:Peer evaluation form (individual)
 
 ---
 
@@ -142,14 +142,14 @@ Near the completion of the course, your team will submit a video presentation of
 The presentation should include all major parts of your project, with a focus on the *results*. 
 
 - The following time allocation should be roughly followed.
-    - 1 min: Introduction/background
-    - 1 min: Research questions and the methods to answer them:
+    - 2 min: Introduction/background
+    - 2 min: Research questions and the methods to answer them:
     - 2 min: Data description
-    - 8 min: Results (e.g., data analysis, modeling results, etc.)
+    - 10 min: Results (e.g., data analysis, modeling results, etc.)
     - 2 min: Discussions (the implications of the results, study limitations, etc.)
     - 1 min: Conclusions
-- The video should be **under 15 minutes**.
-- In the presentation, each team member should speak for roughly even amount of time (i.e., about 5 minutes each).
+- The video should be slightly **under 20 minutes**.
+- In the presentation, each team member should speak for roughly even amount of time.
 - To record your presentation you are free to use any recording software that you are comfortable with, for example, a recorded Zoom meeting. 
 - The video file should be in one of the following format: MP4 (preferred), MOV, WMV, and AVI.
 - One submission per team.
@@ -183,11 +183,11 @@ The presentation should include all major parts of your project, with a focus on
     - The speaker was mostly fluent on the topic. 
         Light discomfort with public speaking was exuded. 
         The presentation only somewhat held audience attention. 
-        The presentation went over by less than one (1) minute.
+        The presentation went over by less than one minute.
     - The speaker was not fluent on the topic. 
         A high level of discomfort with public speaking was exuded. 
         The presentation did not hold audience attention. 
-        The presentation went over by more than one (1) minute.
+        The presentation went over by more than one minute.
 
 ---
 ## Research poster (35% of project grade)
@@ -328,7 +328,7 @@ We recommend writing down a list of things that you would like to achieve at the
 
 ## FAQ
 
-- Is it ok that my video is longer than 15 minutes?
+- Is it ok that my video is longer than 20 minutes?
     - See the Presentation Rubric --> "Presentation skills" above for details.
 
 ---

@@ -1,0 +1,12 @@
+name: imse586
+channels:
+  - conda-forge
+dependencies:
+  - ipykernel
+  - jupyter
+  - jupyterlab
+  - numpy
+  - polars
+  - altair
+  - vega_datasets
+  - vl-convert-python

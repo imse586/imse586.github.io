@@ -1,26 +1,25 @@
 <h2 style="text-align: center;"><a href="../">IMSE 586: Big Data Analytics and Visualization</a></h2>
 
 
-<h3 style="text-align: center;">Fall 2025 - 3 Credit Hours</h3>
+<h3 style="text-align: center;">Fall 2026 - 3 Credit Hours</h3>
 
 <br>
 
 An *introductory*, *technical*, and *hands-on* course on big data analytics and visualization using modern software tools.
 
-## What are the <font color="red">prerequisites</font>?
+## Prerequisites
 
 - [IMSE 510](http://catalog.umd.umich.edu/search/?P=IMSE%20510) or equivalent
-
 - No prior programming experience required
 
-## When and where are this class's <font color="red">lectures</font>?
+## Lecture times
 
-- The **in-person** section meets at **1330 PEC** on **Wednesdays 2:00 PM - 4:45 PM**.
-- Students in the **asynchronous online** section can watch the lecture recordings on Canvas (usually posted shortly after each lecture)
+- The in-person section meets on **Wednesdays 2:00 PM - 4:45 PM** at **1181 HPEC**.
+- Students in the asynchronous online section can watch the lecture recordings on Canvas (usually posted shortly after each lecture)
 
-## Who is the <font color="red">instructor</font>?
+## Instructor
 
-[Dr. Fred Feng](http://www.umich.edu/~fredfeng/) ("Fred" is fine)
+[Dr. Fred Feng](https://fenggroup.org/fredfeng/) ("Fred" is fine)
 
 <!-- ## Who is the <font color="red">GSI</font>? -->
 
@@ -48,11 +47,10 @@ Please note the instructors may not respond to
 - Canvas comments under an assignment
 
 
-## When are the <font color="red">office hours</font>?
+## Office hours
 
 All office hours by Dr. Feng are held on Zoom at <https://umich.zoom.us/my/fredfeng>
-- Mondays 9:30 AM - 10:30 AM
-- Thursdays 3:00 PM - 4:00 PM
+- Tuesdays and Fridays 10:00 AM - 11:00 AM
 - Occasionally, an office hour may need to be moved to a different time. In this case, a Canvas announcement will be sent. You can also refer to our [Course Calendar](../index.html#calendar) for the up-to-date office hour schedule.
 - If you are not able to attend during the above time, you can email Dr. Feng with a request for an appointment.
 
@@ -68,7 +66,7 @@ TBA -->
 Tip: All the office hours (and other course activities, home deadlines, etc.) can be found on the [Course Calendar](../index.html#calendar).
 
 
-## What is Canvas used for?
+## Canvas
 
 Canvas is used for
 
@@ -87,17 +85,17 @@ Canvas is *not* used for
 
 Introduction to big data analytics and visualization. This course provides students with hands-on experience of using analytical and predictive modeling techniques and software for practical applications. Topics include data visualization principles and techniques, data processing and manipulation, and statistical learning methods such as linear regression, classification, model selection, clustering, principal components analysis, and time-series analysis.
 
-## What can I expect IMSE 586 to help me learn & do?
+## Course learning goals
 
-This course is designed to help you
+This course is designed to help you to
 
 - have a fundamental understanding of the common tasks, methods, and challenges in data science
 - learn programming fundamentals for data analytics and visualization
 - obtain, explore, and transform big data from real-world applications
 - use common inferential and predictive models in statistics and machine learning
-- use popular development environments (Python, JupyterLab) in data science and machine learning
+- use popular development environments in data science and machine learning
 
-## What <font color="red">textbooks</font> are we using?
+## Textbooks
 
 There is no official textbook. Below is a list of reference books. 
 
@@ -111,14 +109,14 @@ There is no official textbook. Below is a list of reference books.
 - [*Calling Bullshit: The Art of Skepticism in a Data-Driven World*](https://www.penguinrandomhouse.com/books/563882/calling-bullshit-by-carl-t-bergstrom-and-jevin-d-west/), Bergstrom and West, Random House, 2020
 <!-- - [*Build a Career in Data Science*](https://www.manning.com/books/build-a-career-in-data-science), Robinson & Nolis, Manning Publications, 2020 -->
 
-## What <font color="red">tools & technologies</font> do I need?
+## Tools & technologies
 
 You will need access to a computer that
 - runs one of the following operating systems: Windows, MacOS, Unix
 - has internet access
 - has at least 2GB of hard drive space. 
 
-## What are the <font color="red">homework</font> policies and formats?
+## Homework policies and formats
 
 There will be roughly weekly homework for a total of eleven homework assignments.
 You can find the homework schedule on the [Course Calendar](../index.html#calendar).
@@ -165,14 +163,14 @@ It is recommended to go through the solutions (even briefly) for your study purp
   - Do not write all your code in a single cell or several large cells. Separate different parts of your code/answers in separate cells for better readability.
   - Use the Markdown cells to make your work more readable by briefly explaining what you are doing.
   - Additionally, use comments in the code cells to explain your code.
-  - Follow naming conventions (e.g., `import pandas as pd`).
+  - Follow naming conventions (e.g., `import altair as alt`).
   - Use meaningful variable names.
 
 **Homework regrading policies**
 
-- Regrade requests for homework must be made within ten (10) academic calendar days of when the assignment is returned and must be submitted to Dr. Feng in writing (email).
+- Regrade requests for homework must be made within ten (10) academic calendar days of when the assignment is returned to you and must be submitted to Dr. Feng in writing (email).
 - The entire problem, not just the disputed parts, may be reviewed. Thus, it is possible to receive a lower grade than before.
-- There will be no regrading nor any grade changes after the last week of class.
+- There will be no regrading nor any grade changes after the last lecture.
 
 **Required readings**
 
@@ -195,7 +193,7 @@ The readings are listed below in case you want to get a head start.
 - [*How to Avoid Machine Learning Pitfalls: a Guide for Academic Researchers*](https://arxiv.org/pdf/2108.02497.pdf) by Michael A. Lones
 - Any talks from the [past MIDAS Seminar Series](https://midas.umich.edu/seminar-series/)
 
-## What do I need to know about the <font color="red">class project</font>?
+## Class project
 
 There will be a team project in the second half of the semester.
 See the [Project Guidelines](../project) for details. 
@@ -211,7 +209,7 @@ The final grades may be curved as necessary.
 
 Requests for improving grades based on individual needs will *never* be considered.
 
-## What are the <font color="red">Honor Code</font> policies?
+## Honor Code policies
 
 UM-Dearborn values academic honesty and integrity. 
 Each student has a responsibility to understand, accept, and comply with the University's standards of academic conduct as set forth by the 
@@ -225,12 +223,12 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
 - You are *not* allowed to send or receive any course related materials (e.g., lecture notes, Jupyter notebooks, homework files) to or from another student. 
   Contact the instructors if you are unable to access any course materials. 
 - **Avoiding plagiarism**: You are not allowed to submit, as your own, work that is not the result of *your own labor and thoughts*. 
-  - All your submitted work that includes material derived in any way from another person or source (including online sources and generative AI such as Chat GPT or U-M GPT), either by direct quotation, paraphrasing, or modification, should be fully and properly cited. 
+  - All your submitted work that includes material derived in any way from another person or source (including online sources), either by direct quotation, paraphrasing, or modification, should be fully and properly cited. 
   <!-- - To avoid plagiarism, you should cite all sources of both ideas and direct quotations, including those found on the internet.  -->
   - The citation should provide enough information so that the original source of the material can be located.
 - **Generative AI policies**
-    - **The use of generative AI tools, such as ChatGPT, UM-GPT,  and other similar technologies in this class (e.g., for homework or project) are explicitly forbidden**. 
-    - We believe this is key for this course because we want you to actively and critically engage with the learning material we'll be using, including learning how to use data analytics and visualization to solve engineering problems without the aid of AI technologies. Artificial Intelligence cannot do this learning for you.
+    - **The use of generative AI tools, such as ChatGPT, Claude, UM-GPT, and other similar technologies in this class (e.g., for homework or project) are explicitly forbidden**. 
+    - We believe this is key for this course because we want you to actively and critically engage with the learning material we'll be using, including learning how to use data analytics and visualization to solve engineering problems without the aid of AI technologies. AI cannot do this learning for you.
 - **All violations will be penalized and reported to the University's Academic Integrity Board (AIB) *with no exceptions*.**
 - If you are uncertain if something is allowed or not, ask the instructor *beforehand*.
 
@@ -261,25 +259,31 @@ Cheating, collusion, misconduct, fabrication, and plagiarism are considered seri
 
 **All Honor Code violations will be penalized to the full extent specified by the “penalty policies” sections *and* reported to the University’s Academic Integrity Board (AIB) with no exceptions.**
 
-## What are the <font color="red">copyright</font> policies?
+## Disabilities and accessibility services
+
+You can find more information on the disabilities and accessibility services from the University's [Disability and Accessibility Services (DAS) webpage](https://umdearborn.edu/disability-and-accessibility-services).
+
+## Copyright policies
 
 You shall not send, upload, or distribute any of the course materials to another person or on the internet. 
 The course materials include, but not limited to, the lecture videos and notebooks, and homework and the solutions. 
-Once you have read this syllabus to completion, use *zephyr* as the answer to the question in the first homework.
+Once you have read this syllabus to completion, use *grapefruit* as the answer to the question in the first homework.
 The instructor reserves the rights to apply course-level penalties, up to receiving a failing grade (E), to any copyright policy violations.
 
 ## Food pantry
 
-The pantry exists to support individuals on their journey as they work toward achieving their goals. We are committed to increasing access to food as a key to success, by assisting any student in need! If you need access or have questions, please contact the Office of Student Life by phone at 313-593-5390, by email at <umdearbornpantry@umich.edu>.
+Please use the link for the [Student Food Pantry](https://umdearborn.edu/dean-students/dearborn-support/student-food-pantry).
 
-## University-wide policies or statements
+## University-wide policies & information
 
-Please see the Course Policies menu on Canvas for information on the following
-- University Attendance Policy
-- Academic Integrity Policy
+Please use the link for [the university-wide policies and information](https://umdearborn.edu/policies-and-procedures/academic-policies-and-procedures/course-policies-relevant-university) that covers the following topics:
+
+- Emergency Information and Alerts
+- Attendance Requirement
+- Academic Integrity
 - Counseling
-- Disabilities Services
-- Safety Statement
+- Disabilities and Accessibility Services Accommodations
+- Digital Content Accessibility Statement
 - Harassment, Sexual Violence, Bias, and Discrimination
 
 ## Miscellaneous
